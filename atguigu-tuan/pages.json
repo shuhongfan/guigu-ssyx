@@ -1,0 +1,144 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white", // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+				"navigationBarTitleText": "uni-app"
+			}
+		}, {
+			"path": "pages/categories/categories",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "分类",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登陆页",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/homeItem/homeItem",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#2c2c2c",
+		"selectedColor": "#d81e06",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home-selected.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/categories/categories",
+				"iconPath": "static/images/tabbar/categories.png",
+				"selectedIconPath": "static/images/tabbar/categories-selected.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/images/tabbar/cart.png",
+				"selectedIconPath": "static/images/tabbar/cart-selected.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/images/tabbar/my.png",
+				"selectedIconPath": "static/images/tabbar/my-selected.png",
+				"text": "我的"
+			}
+		]
+	},
+	"subPackages": [{
+			"root": "pagesLocation",
+			"pages": [{
+				"path": "myPickUpLocation/myPickUpLocation",
+				"style": {
+					"navigationBarTitleText": "我的提货点",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "choosePickUpLocation/choosePickUpLocation",
+				"style": {
+					"navigationBarTitleText": "选择其它提货点",
+					"enablePullDownRefresh": false
+				}
+			}]
+		},
+		{
+			"root": "pagesOrder",
+			"pages": [{
+				"path": "confirmOrder/confirmOrder",
+				"style": {
+					"navigationBarTitleText": "确认订单",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom" // 隐藏系统导航栏
+				}
+			}, {
+				"path": "getOrderInfo/getOrderInfo",
+				"style": {
+					"navigationBarTitleText": "确认支付",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom" // 隐藏系统导航栏
+				}
+			}, {
+				"path": "orderList/orderList",
+				"style": {
+					"navigationBarTitleText": "订单列表",
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pagesSeckill",
+			"pages": [{
+				"path": "seckill/seckill",
+				"style": {
+					"navigationBarTitleText": "限时秒杀",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom" // 隐藏系统导航栏
+				}
+			}]
+		}
+	]
+}

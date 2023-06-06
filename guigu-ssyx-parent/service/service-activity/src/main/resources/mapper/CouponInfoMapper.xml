@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.ssyx.activity.mapper.CouponInfoMapper">
+
+    <resultMap id="CouponInfoMap" type="com.atguigu.ssyx.model.activity.CouponInfo" autoMapping="true"></resultMap>
+
+    <!--//1 根据userId获取用户全部优惠卷-->
+    <select id="selectCartCouponInfoList" resultMap="CouponInfoMap">
+        select
+            info.id,info.coupon_type,info.coupon_name,info.amount,
+            info.condition_amount,info.start_time,info.end_time,
+            info.range_type,info.range_desc,info.publish_count,
+            info.per_limit,info.use_count,info.receive_count,
+            info.expire_time,info.publish_status,info.create_time,
+            info.update_time,info.is_deleted,cuse.coupon_status
+        from coupon_use cuse
+        inner join coupon_info info on cuse.coupon_id = info.id
+        <where>
+           and cuse.user_id = #{userId}
+          and info.expire_time >= now()
+        </where>
+        order by info.amount desc
+    </select>
+    <!--//2 根据skuId+分类id+userId查询优惠卷信息-->
+    <select id="selectCouponInfoList" resultMap="CouponInfoMap">
+        select
+            info.id,info.coupon_type,info.coupon_name,info.amount,
+            info.condition_amount,info.start_time,info.end_time,
+            info.range_type,info.range_desc,info.publish_count,
+            info.per_limit,info.use_count,info.receive_count,
+            info.expire_time,info.publish_status,info.create_time,
+            info.update_time,info.is_deleted,cuse.coupon_status
+        from coupon_info info
+        left join coupon_range crange on info.id = crange.coupon_id
+        left join coupon_use cuse on info.id = cuse.coupon_id
+                                         and cuse.user_id = #{userId}
+        where
+            (
+                    info.range_type = 1
+                    or (info.range_type=2 and crange.range_id=#{skuId})
+                    or (info.range_type=3 and crange.range_id=#{categoryId})
+                )
+        and now() between info.start_time and  info.end_time
+        order by info.amount desc
+    </select>
+</mapper>

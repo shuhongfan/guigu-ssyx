@@ -1,0 +1,28 @@
+server:
+  port: 8207
+feign:
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:   #配置全局的feign的调用超时时间  如果 有指定的服务配置 默认的配置不会生效
+        connectTimeout: 50000 # 指定的是 消费者 连接服务提供者的连接超时时间 是否能连接  单位是毫秒
+        readTimeout: 50000  # 指定的是调用服务提供者的 服务 的超时时间（）  单位是毫秒
+spring:
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 1800000
+    password:
+    lettuce:
+      pool:
+        max-active: 20 #最大连接数
+        max-wait: -1    #最大阻塞等待时间(负数表示没限制)
+        max-idle: 5    #最大空闲
+        min-idle: 0     #最小空闲
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8

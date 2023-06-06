@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.ssyx.product.mapper.SkuInfoMapper">
+
+    <resultMap id="skuInfoMap" type="com.atguigu.ssyx.model.product.SkuInfo" autoMapping="true"></resultMap>
+
+    <!--//验证库存-->
+    <select id="checkStock" resultMap="skuInfoMap">
+        select
+            id,category_id,sku_type,sku_name,img_url,per_limit,publish_status,
+            check_status,is_new_person,sort,sku_code,price,market_price,stock,
+            lock_stock,low_stock,sale,ware_id,create_time,update_time,is_deleted
+        from sku_info
+        where id = #{skuId} and stock-lock_stock > #{skuNum} for update
+    </select>
+
+    <!--//锁定库存:update-->
+    <update id="lockStock">
+        update sku_info set lock_stock = lock_stock + #{skuNum} where id = #{skuId}
+    </update>
+
+    <!--//解锁库存-->
+    <update id="unlockStock">
+        update sku_info set lock_stock = lock_stock - #{skuNum} where id = #{skuId}
+    </update>
+
+    <!--减库存-->
+    <update id="minusStock">
+        update sku_info set stock = stock - #{skuNum},lock_stock = lock_stock - #{skuNum},
+                            sale = sale + #{skuNum} where id=#{skuId}
+    </update>
+</mapper>

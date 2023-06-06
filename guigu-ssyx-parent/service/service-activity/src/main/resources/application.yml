@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-activity
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848

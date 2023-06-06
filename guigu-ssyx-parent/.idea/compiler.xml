@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-util" />
+        <module name="service-product-client" />
+        <module name="service-search-client" />
+        <module name="service-gateway" />
+        <module name="rabbit_util" />
+        <module name="service-home" />
+        <module name="service-order-client" />
+        <module name="service-sys" />
+        <module name="service-user-client" />
+        <module name="service-util" />
+        <module name="service-order" />
+        <module name="service-activity-client" />
+        <module name="service-acl" />
+        <module name="service-product" />
+        <module name="service-user" />
+        <module name="service-cart" />
+        <module name="service-search" />
+        <module name="model" />
+        <module name="service-cart-client" />
+        <module name="service-activity" />
+        <module name="service-payment" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-util" options="-parameters" />
+      <module name="model" options="-parameters" />
+      <module name="rabbit_util" options="-parameters" />
+      <module name="service" options="-parameters" />
+      <module name="service-acl" options="-parameters" />
+      <module name="service-activity" options="-parameters" />
+      <module name="service-activity-client" options="-parameters" />
+      <module name="service-cart" options="-parameters" />
+      <module name="service-cart-client" options="-parameters" />
+      <module name="service-client" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
+      <module name="service-home" options="-parameters" />
+      <module name="service-order" options="-parameters" />
+      <module name="service-order-client" options="-parameters" />
+      <module name="service-payment" options="-parameters" />
+      <module name="service-product" options="-parameters" />
+      <module name="service-product-client" options="-parameters" />
+      <module name="service-search" options="-parameters" />
+      <module name="service-search-client" options="-parameters" />
+      <module name="service-sys" options="-parameters" />
+      <module name="service-user" options="-parameters" />
+      <module name="service-user-client" options="-parameters" />
+      <module name="service-util" options="-parameters" />
+    </option>
+  </component>
+</project>
