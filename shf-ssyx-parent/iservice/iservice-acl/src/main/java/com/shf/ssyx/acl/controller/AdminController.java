@@ -3,6 +3,7 @@ package com.shf.ssyx.acl.controller;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.shf.ssyx.acl.service.AdminService;
+import com.shf.ssyx.acl.service.RoleService;
 import com.shf.ssyx.common.result.Result;
 import com.shf.ssyx.common.utils.MD5;
 import com.shf.ssyx.model.acl.Admin;
@@ -14,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/admin/acl/user")
@@ -23,6 +26,9 @@ public class AdminController {
 
     @Autowired
     private AdminService adminService;
+
+    @Autowired
+    private RoleService roleService;
 
     @ApiOperation("用户列表")
     @GetMapping("{current}/{limit}")
@@ -73,6 +79,21 @@ public class AdminController {
     @DeleteMapping("batchRemove")
     public Result batchRemove(@RequestBody List<Long> ids) {
         adminService.removeByIds(ids);
+        return Result.ok(null);
+    }
+
+    @ApiOperation("获取用户角色")
+    @GetMapping("toAssign/{adminId}")
+    public Result toAssign(@PathVariable Long adminId) {
+//        返回map集合包含两部分数据：所有角色 和 为用户分配角色列表
+        Map<String, Object> map = roleService.getRoleByAdminId(adminId);
+        return Result.ok(map);
+    }
+
+    @ApiOperation("为用户进行角色分配")
+    @PostMapping("doAssign")
+    public Result doAssign(@RequestParam Long adminId, @RequestParam Long[] roleId) {
+        roleService.saveAdminRole(adminId, roleId);
         return Result.ok(null);
     }
 }
