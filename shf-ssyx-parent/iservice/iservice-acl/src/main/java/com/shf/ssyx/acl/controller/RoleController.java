@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin/acl/role")
-@Api(tags = "用户管理")
+@Api(tags = "角色接口")
 @Slf4j
 @CrossOrigin
 public class RoleController {

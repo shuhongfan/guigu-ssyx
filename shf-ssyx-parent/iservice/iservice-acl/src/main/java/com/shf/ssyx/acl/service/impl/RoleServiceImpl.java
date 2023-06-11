@@ -1,4 +1,4 @@
-package com.shf.ssyx.acl.service;
+package com.shf.ssyx.acl.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.shf.ssyx.acl.mapper.RoleMapper;
+import com.shf.ssyx.acl.service.RoleService;
 import com.shf.ssyx.model.acl.Role;
 import com.shf.ssyx.vo.acl.RoleQueryVo;
 import org.springframework.stereotype.Service;
