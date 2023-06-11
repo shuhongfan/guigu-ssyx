@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>iservice-acl</module>
+        <module>iservice-sys</module>
     </modules>
 
     <properties>

@@ -28,6 +28,7 @@
         <module name="iservice-util" />
         <module name="iservice-acl" />
         <module name="service-product" />
+        <module name="iservice-sys" />
         <module name="icommon-util" />
         <module name="service-search" />
         <module name="service-cart-client" />
@@ -42,6 +43,7 @@
       <module name="imodel" options="-parameters" />
       <module name="iservice" options="" />
       <module name="iservice-acl" options="-parameters" />
+      <module name="iservice-sys" options="-parameters" />
       <module name="iservice-util" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="rabbit_util" options="-parameters" />

@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/common/common-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/common/rabbit_util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/common/service-util/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/service-activity-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/service-cart-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/service-order-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/service-product-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/service-search-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/service-user-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-acl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-activity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-cart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-home/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-sys/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/service-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guigu-ssyx-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shf-ssyx-parent/icommon/icommon-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shf-ssyx-parent/icommon/iservice-util/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/icommon/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/icommon/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/imodel/iservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/imodel/iservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shf-ssyx-parent/imodel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shf-ssyx-parent/iservice/iservice-acl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shf-ssyx-parent/iservice/iservice-sys/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/iservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/iservice/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shf-ssyx-parent/src/main/java" charset="UTF-8" />
