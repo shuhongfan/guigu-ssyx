@@ -9,9 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>icommon</module>
-        <module>imodel</module>
-        <module>iservice</module>
+        <module>common</module>
+        <module>model</module>
+        <module>service</module>
     </modules>
 
     <parent>
