@@ -12,7 +12,18 @@ spring:
     url: jdbc:mysql://192.168.8.128:3306/shequ-product??serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123456
-
+  rabbitmq:
+    host: 192.168.120.20
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirm-type: CORRELATED  #发布确认模式，消息是否被成功发送到交换机
+    publisher-returns: true
+    listener:
+      simple:
+        prefetch: 1
+        concurrency: 3
+        acknowledge-mode: manual   #消费端手动确认
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: service-acl
+    name: service-search
   profiles:
     active: dev
   cloud:

@@ -8,6 +8,9 @@ import com.shf.ssyx.model.product.SkuAttrValue;
 import com.shf.ssyx.model.product.SkuImage;
 import com.shf.ssyx.model.product.SkuInfo;
 import com.shf.ssyx.model.product.SkuPoster;
+import com.shf.ssyx.mq.config.MQConfig;
+import com.shf.ssyx.mq.constant.MqConst;
+import com.shf.ssyx.mq.service.RabbitService;
 import com.shf.ssyx.product.mapper.SkuInfoMapper;
 import com.shf.ssyx.product.service.SkuAttrValueService;
 import com.shf.ssyx.product.service.SkuImageService;
@@ -52,6 +55,12 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoMapper, SkuInfo> impl
      */
     @Autowired
     private SkuPosterService skuPosterService;
+
+    /**
+     * MQ发送消息
+     */
+    @Autowired
+    private RabbitService rabbitService;
 
     /**
      * SKU列表
@@ -213,12 +222,22 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoMapper, SkuInfo> impl
             SkuInfo skuInfo = baseMapper.selectById(skuId);
             skuInfo.setPublishStatus(status);
             baseMapper.updateById(skuInfo);
+
 //            TODO 整合MQ把数据同步到ES里面
+            rabbitService.sendMessage(
+                    MqConst.EXCHANGE_GOODS_DIRECT,
+                    MqConst.ROUTING_GOODS_UPPER,
+                    skuId);
         } else { // 下架
             SkuInfo skuInfo = baseMapper.selectById(skuId);
             skuInfo.setPublishStatus(status);
             baseMapper.updateById(skuInfo);
 //            TODO 整合MQ把数据同步到ES里面
+            rabbitService.sendMessage(
+                    MqConst.EXCHANGE_GOODS_DIRECT,
+                    MqConst.ROUTING_LEADER_LOWER,
+                    skuId
+            );
         }
     }
 
