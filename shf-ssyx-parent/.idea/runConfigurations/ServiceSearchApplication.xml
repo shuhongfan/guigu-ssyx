@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ServiceSysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-    <module name="service-sys" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.shf.ssyx.ServiceSysApplication" />
+  <configuration default="false" name="ServiceSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="service-search" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.shf.ssyx.ServiceSearchApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.shf.ssyx.*" />

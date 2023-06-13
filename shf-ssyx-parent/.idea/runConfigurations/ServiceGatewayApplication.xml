@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ServiceSysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-    <module name="service-sys" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.shf.ssyx.ServiceSysApplication" />
+  <configuration default="false" name="ServiceGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="service-gateway" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.shf.ssyx.ServiceGatewayApplication" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.shf.ssyx.*" />

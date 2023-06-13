@@ -13,6 +13,7 @@
         <module>model</module>
         <module>service</module>
         <module>service-client</module>
+        <module>service-gateway</module>
     </modules>
 
     <parent>

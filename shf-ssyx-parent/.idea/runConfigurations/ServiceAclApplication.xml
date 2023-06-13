@@ -1,6 +1,5 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="ServiceAclApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
     <module name="service-acl" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.shf.ssyx.ServiceAclApplication" />
     <extension name="coverage">

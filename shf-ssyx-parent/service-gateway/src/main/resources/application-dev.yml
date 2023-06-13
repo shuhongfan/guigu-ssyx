@@ -1,0 +1,59 @@
+server:
+  port: 8200
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: service-acl
+          uri: lb://service-acl
+          predicates:
+            - Path=/*/acl/**
+
+        - id: service-sys
+          uri: lb://service-sys
+          predicates:
+            - Path=/*/sys/**
+
+        - id: service-product
+          uri: lb://service-product
+          predicates:
+            - Path=/*/product/**
+
+        - id: service-activity
+          uri: lb://service-activity
+          predicates:
+            - Path=/*/activity/**
+
+        - id: service-order
+          uri: lb://service-order
+          predicates:
+            - Path=/*/order/**
+
+        - id: service-payment
+          uri: lb://service-payment
+          predicates:
+            - Path=/*/payment/**
+
+        - id: service-user
+          uri: lb://service-user
+          predicates:
+            - Path=/*/user/**
+
+        - id: service-search
+          uri: lb://service-search
+          predicates:
+            - Path=/*/search/**
+
+        - id: service-home
+          uri: lb://service-home
+          predicates:
+            - Path=/*/home/**
+
+        - id: service-cart
+          uri: lb://service-cart
+          predicates:
+            - Path=/*/cart/**

@@ -19,7 +19,6 @@ import java.util.List;
 @RequestMapping("/admin/acl/role")
 @Api(tags = "角色接口")
 @Slf4j
-@CrossOrigin
 public class RoleController {
 
     @Autowired

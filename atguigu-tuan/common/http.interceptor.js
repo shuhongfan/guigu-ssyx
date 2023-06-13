@@ -1,7 +1,7 @@
 const install = (Vue, vm) => {
 	Vue.prototype.$u.http.setConfig({
 		//baseUrl: 'https://gmall-prod.atguigu.cn/api',
-		baseUrl: 'http://ggkt2.vipgz1.91tunnel.com/api',
+		baseUrl: 'http://shuhongfan.51vip.biz:48170/api',
 		loadingText: '请求中...', // 请求loading中的文字提示
 		loadingTime: 800, // 在此时间内，请求还没回来的话，就显示加载中动画，单位ms
 		loadingMask: true, // 展示loading的时候，是否给一个透明的蒙层，防止触摸穿透
