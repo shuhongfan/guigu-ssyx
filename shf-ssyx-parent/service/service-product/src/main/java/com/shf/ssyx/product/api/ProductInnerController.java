@@ -7,10 +7,9 @@ import com.shf.ssyx.product.service.SkuInfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Api(tags = "ES远程调用接口")
 @RestController
@@ -37,4 +36,21 @@ public class ProductInnerController {
         return skuInfo;
     }
 
+    @ApiOperation("根据skuId列表得到sku信息列表")
+    @PostMapping("inner/findSkuInfoList")
+    public List<SkuInfo> findSkuInfoList(@RequestBody List<Long> skuIdList) {
+        return skuInfoService.findSkuInfoList(skuIdList);
+    }
+
+    @ApiOperation("根据关键词匹配SKU列表")
+    @GetMapping("inner/findSkuInfoByKeyword/{keyword}")
+    public List<SkuInfo> findSkuInfoByKeyword(@PathVariable String keyword) {
+        return skuInfoService.findSkuInfoByKeyword(keyword);
+    }
+
+    @ApiOperation("根据分类id获取分类列表")
+    @PostMapping("inner/findCategoryList")
+    public List<Category> findCategoryList(@RequestBody List<Long> categoryId) {
+        return categoryService.listByIds(categoryId);
+    }
 }

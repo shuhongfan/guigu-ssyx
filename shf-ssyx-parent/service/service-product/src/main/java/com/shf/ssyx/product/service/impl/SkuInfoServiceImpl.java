@@ -253,4 +253,29 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoMapper, SkuInfo> impl
         skuInfo.setIsNewPerson(status);
         baseMapper.updateById(skuInfo);
     }
+
+    /**
+     * 根据skuId列表得到sku信息列表
+     * @param skuIdList
+     * @return
+     */
+    @Override
+    public List<SkuInfo> findSkuInfoList(List<Long> skuIdList) {
+        List<SkuInfo> skuInfoList = baseMapper.selectBatchIds(skuIdList);
+        return skuInfoList;
+    }
+
+    /**
+     * 根据关键词匹配SKU列表
+     * @param keyword
+     * @return
+     */
+    @Override
+    public List<SkuInfo> findSkuInfoByKeyword(String keyword) {
+        List<SkuInfo> skuInfoList = baseMapper.selectList(
+                new LambdaQueryWrapper<SkuInfo>()
+                        .like(SkuInfo::getSkuName, keyword)
+        );
+        return skuInfoList;
+    }
 }

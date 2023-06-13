@@ -16,6 +16,7 @@
         <module>service-sys</module>
         <module>service-product</module>
         <module>service-search</module>
+        <module>service-activity</module>
     </modules>
 
     <properties>

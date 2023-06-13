@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shf.ssyx.activity.mapper.ActivityInfoMapper">
+    <resultMap id="ActivityRuleMap" type="com.shf.ssyx.model.activity.ActivityRule" autoMapping="true"></resultMap>
+    <resultMap id="ActivitySkuMap" type="com.shf.ssyx.model.activity.ActivitySku" autoMapping="true"></resultMap>
+
+<!--    判断添加商品之前是否参加过活动,如果之前参加过,活动正在进行中,排除商品-->
+    <select id="selectSkuIdListExist" resultType="Long">
+        select
+        sku.sku_id
+        from activity_info info
+        inner join activity_sku sku on sku.activity_id = info.id
+        <where>
+            <if test="skuIdList != null">
+                and sku.sku_id in
+                <foreach collection="skuIdList" item="item" index="index" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            and now() between info.start_time and info.end_time
+        </where>
+    </select>
+
+    <select id="selectActivityRuleList" resultMap="ActivityRuleMap">
+        select
+            info.activity_type as activityType,
+            rule.id,rule.activity_id,rule.condition_amount,rule.condition_num,rule.benefit_amount,rule.benefit_discount
+        from activity_info info
+                 inner join activity_sku sku on sku.activity_id = info.id
+                 inner join activity_rule rule on rule.activity_id = info.id
+        where
+            sku.sku_id = #{skuId}
+          and now() between info.start_time and info.end_time
+        order by rule.condition_amount desc, rule.condition_num desc
+    </select>
+
+</mapper>

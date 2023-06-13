@@ -8,6 +8,8 @@ import com.shf.ssyx.model.product.SkuInfo;
 import com.shf.ssyx.vo.product.SkuInfoQueryVo;
 import com.shf.ssyx.vo.product.SkuInfoVo;
 
+import java.util.List;
+
 /**
  * <p>
  * sku信息 服务类
@@ -65,4 +67,18 @@ public interface SkuInfoService extends IService<SkuInfo> {
      * @param status
      */
     void isNewPerson(Long skuId, Integer status);
+
+    /**
+     * 根据skuId列表得到sku信息列表
+     * @param skuIdList
+     * @return
+     */
+    List<SkuInfo> findSkuInfoList(List<Long> skuIdList);
+
+    /**
+     * 根据关键词匹配SKU列表
+     * @param keyword
+     * @return
+     */
+    List<SkuInfo> findSkuInfoByKeyword(String keyword);
 }
