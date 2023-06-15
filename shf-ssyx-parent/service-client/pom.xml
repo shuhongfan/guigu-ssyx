@@ -13,6 +13,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>service-product-client</module>
+        <module>service-user-client</module>
+        <module>service-search-client</module>
+        <module>service-activity-client</module>
     </modules>
 
     <properties>

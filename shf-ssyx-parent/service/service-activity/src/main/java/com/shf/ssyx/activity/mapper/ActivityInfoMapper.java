@@ -26,5 +26,11 @@ public interface ActivityInfoMapper extends BaseMapper<ActivityInfo> {
      */
     List<Long> selectSkuIdListExist(@Param("skuIdList")List<Long> skuIdList);
 
-    List<ActivityRule> selectActivityRuleList(@Param("skuId")Long skuId);
+    /**
+     * 根据skuID进行查询，查询sku对应活动里面规则列表
+     * @param skuId
+     * @return
+     */
+    List<ActivityRule> findActivityRule(@Param("skuId")Long skuId);
+
 }

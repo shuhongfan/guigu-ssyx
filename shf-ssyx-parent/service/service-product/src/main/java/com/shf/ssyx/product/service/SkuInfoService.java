@@ -81,4 +81,17 @@ public interface SkuInfoService extends IService<SkuInfo> {
      * @return
      */
     List<SkuInfo> findSkuInfoByKeyword(String keyword);
+
+    /**
+     * 获取新人专享商品
+     * @return
+     */
+    List<SkuInfo> findNewPersonSkuInfoList();
+
+    /**
+     * 根据skuId获取SKu信息
+     * @param skuId
+     * @return
+     */
+    SkuInfoVo getSkuInfoVo(Long skuId);
 }

@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.shf.ssyx.model.activity.ActivityInfo;
+import com.shf.ssyx.model.activity.ActivityRule;
 import com.shf.ssyx.model.product.SkuInfo;
 import com.shf.ssyx.vo.activity.ActivityRuleVo;
 
@@ -47,4 +48,26 @@ public interface ActivityInfoService extends IService<ActivityInfo> {
      * @return
      */
     List<SkuInfo> findSkuInfoByKeyword(String keyword);
+
+    /**
+     * 根据SKuId列表获取促销信息
+     * @param skuIdList
+     * @return
+     */
+    Map<Long, List<String>> findActivity(List<Long> skuIdList);
+
+    /**
+     * 根据skuId获取促销与优惠券信息
+     * @param skuId
+     * @param userId
+     * @return
+     */
+    Map<String, Object> findActivityAndCoupon(Long skuId, Long userId);
+
+    /**
+     * 根据SKUId获取活动规则数据
+     * @param skuId
+     * @return
+     */
+    List<ActivityRule> findActivityRuleBySkuId(Long skuId);
 }

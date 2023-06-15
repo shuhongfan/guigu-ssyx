@@ -278,4 +278,53 @@ public class SkuInfoServiceImpl extends ServiceImpl<SkuInfoMapper, SkuInfo> impl
         );
         return skuInfoList;
     }
+
+    /**
+     * 获取新人专享商品
+     * @return
+     */
+    @Override
+    public List<SkuInfo> findNewPersonSkuInfoList() {
+//        条件1： is_new_person=1
+//        条件2：publish_status=1
+//        条件3：其实其中三个
+        LambdaQueryWrapper<SkuInfo> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(SkuInfo::getIsNewPerson, 1);
+        wrapper.eq(SkuInfo::getPublishStatus, 1);
+        wrapper.orderByDesc(SkuInfo::getStock);
+
+        Page<SkuInfo> pageParam = new Page<>(1, 3);
+        Page<SkuInfo> skuInfoPage = baseMapper.selectPage(pageParam, wrapper);
+        List<SkuInfo> records = skuInfoPage.getRecords();
+        return records;
+    }
+
+    /**
+     * 根据skuId获取SKu信息
+     * @param skuId
+     * @return
+     */
+    @Override
+    public SkuInfoVo getSkuInfoVo(Long skuId) {
+        SkuInfoVo skuInfoVo = new SkuInfoVo();
+//        skuId查询skuInfo
+        SkuInfo skuInfo = baseMapper.selectById(skuId);
+
+//        skuId查询sku图片
+        List<SkuImage> skuImages = skuImageService.getImageListBySkuId(skuId);
+
+//        skuId查询sku海报
+        List<SkuPoster> skuPosters = skuPosterService.getPosterListBySkuId(skuId);
+
+//        SkuId查询sku属性
+        List<SkuAttrValue> skuAttrValues = skuAttrValueService.getAttrValueListBySkuId(skuId);
+
+//        封装到SkuInfoVo对象
+        BeanUtils.copyProperties(skuInfo, skuInfoVo);
+        skuInfoVo.setSkuImagesList(skuImages);
+        skuInfoVo.setSkuPosterList(skuPosters);
+        skuInfoVo.setSkuAttrValueList(skuAttrValues);
+
+        return skuInfoVo;
+    }
 }

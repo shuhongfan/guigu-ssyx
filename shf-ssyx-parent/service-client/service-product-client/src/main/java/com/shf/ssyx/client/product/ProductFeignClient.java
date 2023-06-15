@@ -2,6 +2,7 @@ package com.shf.ssyx.client.product;
 
 import com.shf.ssyx.model.product.Category;
 import com.shf.ssyx.model.product.SkuInfo;
+import com.shf.ssyx.vo.product.SkuInfoVo;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,4 +33,16 @@ public interface ProductFeignClient {
     @ApiOperation("根据分类id获取分类列表")
     @PostMapping("/api/product/inner/findCategoryList")
     public List<Category> findCategoryList(@RequestBody List<Long> categoryId);
+
+    @ApiOperation("获取所有分类")
+    @GetMapping("/api/product/inner/findAllCategoryList")
+    public List<Category> findAllCategoryList();
+
+    @ApiOperation("获取新人专享商品")
+    @GetMapping("/api/product/inner/findNewPersonSkuInfoList")
+    public List<SkuInfo> findNewPersonSkuInfoList();
+
+    @ApiOperation("根据skuId获取SKu信息")
+    @GetMapping("/api/product/inner/getSkuInfoVo/{skuId}")
+    public SkuInfoVo getSkuInfoVo(@PathVariable Long skuId);
 }

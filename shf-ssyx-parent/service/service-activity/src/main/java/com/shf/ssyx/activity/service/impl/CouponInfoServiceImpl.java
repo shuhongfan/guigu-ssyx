@@ -149,4 +149,24 @@ public class CouponInfoServiceImpl extends ServiceImpl<CouponInfoMapper, CouponI
         }
     }
 
+    /**
+     * 根据skuId+userId查询优惠券信息
+     * @param skuId
+     * @param userId
+     * @return
+     */
+    @Override
+    public List<CouponInfo> findCouponInfoList(Long skuId, Long userId) {
+//        远程调用：根据SkuId获取skuInfo
+        SkuInfo skuInfo = productFeignClient.getSkuInfo(skuId);
+
+//        根据条件查询：skuId+分类Id+userId
+        List<CouponInfo> couponInfoList = baseMapper.selectCouponInfo(
+                skuInfo.getId(),
+                skuInfo.getCategoryId(),
+                userId
+        );
+        return couponInfoList;
+    }
+
 }

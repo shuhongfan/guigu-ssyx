@@ -4,6 +4,7 @@ import com.shf.ssyx.model.product.Category;
 import com.shf.ssyx.model.product.SkuInfo;
 import com.shf.ssyx.product.service.CategoryService;
 import com.shf.ssyx.product.service.SkuInfoService;
+import com.shf.ssyx.vo.product.SkuInfoVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,5 +53,24 @@ public class ProductInnerController {
     @PostMapping("inner/findCategoryList")
     public List<Category> findCategoryList(@RequestBody List<Long> categoryId) {
         return categoryService.listByIds(categoryId);
+    }
+
+    @ApiOperation("获取所有分类")
+    @GetMapping("inner/findAllCategoryList")
+    public List<Category> findAllCategoryList() {
+        List<Category> categoryList = categoryService.list();
+        return categoryList;
+    }
+
+    @ApiOperation("获取新人专享商品")
+    @GetMapping("inner/findNewPersonSkuInfoList")
+    public List<SkuInfo> findNewPersonSkuInfoList() {
+        return skuInfoService.findNewPersonSkuInfoList();
+    }
+
+    @ApiOperation("根据skuId获取SKu信息")
+    @GetMapping("inner/getSkuInfoVo/{skuId}")
+    public SkuInfoVo getSkuInfoVo(@PathVariable Long skuId) {
+        return skuInfoService.getSkuInfoVo(skuId);
     }
 }

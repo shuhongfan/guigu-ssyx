@@ -9,15 +9,18 @@ import com.shf.ssyx.activity.mapper.ActivityInfoMapper;
 import com.shf.ssyx.activity.mapper.ActivityRuleMapper;
 import com.shf.ssyx.activity.mapper.ActivitySkuMapper;
 import com.shf.ssyx.activity.service.ActivityInfoService;
+import com.shf.ssyx.activity.service.CouponInfoService;
 import com.shf.ssyx.client.product.ProductFeignClient;
 import com.shf.ssyx.enums.ActivityType;
 import com.shf.ssyx.model.activity.ActivityInfo;
 import com.shf.ssyx.model.activity.ActivityRule;
 import com.shf.ssyx.model.activity.ActivitySku;
+import com.shf.ssyx.model.activity.CouponInfo;
 import com.shf.ssyx.model.product.SkuInfo;
 import com.shf.ssyx.vo.activity.ActivityRuleVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,6 +47,9 @@ public class ActivityInfoServiceImpl extends ServiceImpl<ActivityInfoMapper,Acti
 
     @Autowired
     private ProductFeignClient productFeignClient;
+
+    @Autowired
+    private CouponInfoService couponInfoService;
 
     /**
      * 活动列表
@@ -160,5 +166,88 @@ public class ActivityInfoServiceImpl extends ServiceImpl<ActivityInfoMapper,Acti
         });
 
         return findSkuList;
+    }
+
+    /**
+     * 根据SKuId列表获取促销信息
+     * @param skuIdList
+     * @return
+     */
+    @Override
+    public Map<Long, List<String>> findActivity(List<Long> skuIdList) {
+        HashMap<Long, List<String>> result = new HashMap<>();
+//        skuIdList遍历，得到每个SKUID
+        skuIdList.forEach(skuId->{
+//        根据skuID进行查询，查询sku对应活动里面规则列表
+            List<ActivityRule> activityRuleList = baseMapper.findActivityRule(skuId);
+
+//        数据封装，规则名称
+            if (!CollectionUtils.isEmpty(activityRuleList)) {
+                ArrayList<String> ruleList = new ArrayList<>();
+//                把规则名称处理
+                activityRuleList.forEach(activityRule -> ruleList.add(getRuleDesc(activityRule)));
+                result.put(skuId, ruleList);
+            }
+        });
+
+        return result;
+    }
+
+    /**
+     * 根据skuId获取促销与优惠券信息
+     * @param skuId
+     * @param userId
+     * @return
+     */
+    @Override
+    public Map<String, Object> findActivityAndCoupon(Long skuId, Long userId) {
+        Map<String, Object> result = new HashMap<>();
+//        1.根据skuid获取sku营销活动，一个活动有多个规则
+        List<ActivityRule> activityRuleList = findActivityRuleBySkuId(skuId);
+        result.put("activityRuleList", activityRuleList);
+
+//        2.根据skuId+userId查询优惠券信息
+        List<CouponInfo> couponInfoList = couponInfoService.findCouponInfoList(skuId, userId);
+        result.put("couponInfoList", couponInfoList);
+        return result;
+    }
+
+    /**
+     * 根据SKUId获取活动规则数据
+     * @param skuId
+     * @return
+     */
+    @Override
+    public List<ActivityRule> findActivityRuleBySkuId(Long skuId) {
+        List<ActivityRule> activityRuleList = baseMapper.findActivityRule(skuId);
+        activityRuleList.forEach(activityRule -> {
+            String ruleDesc = getRuleDesc(activityRule);
+            activityRule.setRuleDesc(ruleDesc);
+        });
+        return activityRuleList;
+    }
+
+    /**
+     * 构造规则名称
+     * @param activityRule
+     * @return
+     */
+    private String getRuleDesc(ActivityRule activityRule) {
+        ActivityType activityType = activityRule.getActivityType();
+        StringBuffer ruleDesc = new StringBuffer();
+        if (activityType == ActivityType.FULL_REDUCTION) {
+            ruleDesc.append("满")
+                    .append(activityRule.getConditionAmount())
+                    .append("元减")
+                    .append(activityRule.getBenefitAmount())
+                    .append("元");
+        } else {
+            ruleDesc.append("满")
+                    .append(activityRule.getConditionNum())
+                    .append("元打")
+                    .append(activityRule.getBenefitDiscount())
+                    .append("折");
+        }
+        return ruleDesc.toString();
     }
 }

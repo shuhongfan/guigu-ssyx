@@ -21,7 +21,8 @@
         </where>
     </select>
 
-    <select id="selectActivityRuleList" resultMap="ActivityRuleMap">
+<!--    根据skuID进行查询，查询sku对应活动里面规则列表-->
+    <select id="findActivityRule" resultMap="ActivityRuleMap">
         select
             info.activity_type as activityType,
             rule.id,rule.activity_id,rule.condition_amount,rule.condition_num,rule.benefit_amount,rule.benefit_discount
