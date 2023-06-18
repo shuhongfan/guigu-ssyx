@@ -4,6 +4,7 @@ package com.shf.ssyx.activity.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.shf.ssyx.model.activity.ActivityInfo;
 import com.shf.ssyx.model.activity.ActivityRule;
+import com.shf.ssyx.model.activity.ActivitySku;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -33,4 +34,10 @@ public interface ActivityInfoMapper extends BaseMapper<ActivityInfo> {
      */
     List<ActivityRule> findActivityRule(@Param("skuId")Long skuId);
 
+    /**
+     * 根据所有skuId列表获取参与活动
+     * @param skuIdList
+     * @return
+     */
+    List<ActivitySku> selectCartActivity(@Param("skuIdList") List<Long> skuIdList);
 }

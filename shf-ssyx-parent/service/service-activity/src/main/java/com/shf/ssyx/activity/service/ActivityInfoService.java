@@ -6,8 +6,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.shf.ssyx.model.activity.ActivityInfo;
 import com.shf.ssyx.model.activity.ActivityRule;
+import com.shf.ssyx.model.order.CartInfo;
 import com.shf.ssyx.model.product.SkuInfo;
 import com.shf.ssyx.vo.activity.ActivityRuleVo;
+import com.shf.ssyx.vo.order.CartInfoVo;
+import com.shf.ssyx.vo.order.OrderConfirmVo;
 
 import java.util.List;
 import java.util.Map;
@@ -70,4 +73,19 @@ public interface ActivityInfoService extends IService<ActivityInfo> {
      * @return
      */
     List<ActivityRule> findActivityRuleBySkuId(Long skuId);
+
+    /**
+     * 获取购物车里面满足优惠券和活动的信息
+     * @param cartInfoList
+     * @param userId
+     * @return
+     */
+    OrderConfirmVo findCartActivityAndCoupon(List<CartInfo> cartInfoList, Long userId);
+
+    /**
+     * 获取购物车对应规则数据
+     * @param cartInfoList
+     * @return
+     */
+    List<CartInfoVo> findCartActivityList(List<CartInfo> cartInfoList);
 }

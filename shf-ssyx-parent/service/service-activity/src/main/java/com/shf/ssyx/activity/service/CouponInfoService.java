@@ -4,6 +4,7 @@ package com.shf.ssyx.activity.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.shf.ssyx.model.activity.CouponInfo;
+import com.shf.ssyx.model.order.CartInfo;
 import com.shf.ssyx.vo.activity.CouponRuleVo;
 
 import java.util.List;
@@ -54,4 +55,12 @@ public interface CouponInfoService extends IService<CouponInfo> {
      * @return
      */
     List<CouponInfo> findCouponInfoList(Long skuId, Long userId);
+
+    /**
+     * 获取购物车可以使用优惠券列表
+     * @param cartInfoList
+     * @param userId
+     * @return
+     */
+    List<CouponInfo> findCartCouponInfo(List<CartInfo> cartInfoList, Long userId);
 }

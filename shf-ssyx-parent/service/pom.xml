@@ -19,6 +19,7 @@
         <module>service-activity</module>
         <module>service-user</module>
         <module>service-home</module>
+        <module>service-cart</module>
     </modules>
 
     <properties>

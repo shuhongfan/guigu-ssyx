@@ -4,7 +4,7 @@
     <resultMap id="ActivityRuleMap" type="com.shf.ssyx.model.activity.ActivityRule" autoMapping="true"></resultMap>
     <resultMap id="ActivitySkuMap" type="com.shf.ssyx.model.activity.ActivitySku" autoMapping="true"></resultMap>
 
-<!--    判断添加商品之前是否参加过活动,如果之前参加过,活动正在进行中,排除商品-->
+    <!--    判断添加商品之前是否参加过活动,如果之前参加过,活动正在进行中,排除商品-->
     <select id="selectSkuIdListExist" resultType="Long">
         select
         sku.sku_id
@@ -21,18 +21,35 @@
         </where>
     </select>
 
-<!--    根据skuID进行查询，查询sku对应活动里面规则列表-->
+    <!--    根据skuID进行查询，查询sku对应活动里面规则列表-->
     <select id="findActivityRule" resultMap="ActivityRuleMap">
-        select
-            info.activity_type as activityType,
-            rule.id,rule.activity_id,rule.condition_amount,rule.condition_num,rule.benefit_amount,rule.benefit_discount
+        select info.activity_type as activityType,
+               rule.id,
+               rule.activity_id,
+               rule.condition_amount,
+               rule.condition_num,
+               rule.benefit_amount,
+               rule.benefit_discount
         from activity_info info
                  inner join activity_sku sku on sku.activity_id = info.id
                  inner join activity_rule rule on rule.activity_id = info.id
-        where
-            sku.sku_id = #{skuId}
+        where sku.sku_id = #{skuId}
           and now() between info.start_time and info.end_time
         order by rule.condition_amount desc, rule.condition_num desc
+    </select>
+
+    <!--    根据所有skuId列表获取参与活动-->
+    <select id="selectCartActivity" resultType="com.shf.ssyx.model.activity.ActivitySku">
+        select info.id as activityId,sku.sku_id as skuId
+        from activity_info info
+        inner join activity_sku sku on info.id=sku.activity_id
+        <where>
+            and sku.sku_id in
+            <foreach collection="skuIdList" item="item" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+            and now() between info.start_time and info.end_time
+        </where>
     </select>
 
 </mapper>
