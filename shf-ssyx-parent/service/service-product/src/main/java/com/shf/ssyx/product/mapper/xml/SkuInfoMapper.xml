@@ -20,6 +20,15 @@
         where id = #{skuId};
     </update>
 
+<!--    减少库存-->
+    <update id="minusStock">
+        update sku_info
+        set stock= stock - #{skuNum},
+            lock_stock=lock_stock - #{skuNum},
+            sale=sale + #{skuNum}
+        where id = #{skuId};
+    </update>
+
     <!--    验证库存-->
     <select id="checkStock" resultType="com.shf.ssyx.model.product.SkuInfo">
         select

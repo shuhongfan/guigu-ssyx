@@ -1,10 +1,13 @@
 package com.shf.ssyx.order.service;
 
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.shf.ssyx.model.order.OrderInfo;
 import com.shf.ssyx.vo.order.OrderConfirmVo;
 import com.shf.ssyx.vo.order.OrderSubmitVo;
+import com.shf.ssyx.vo.order.OrderUserQueryVo;
 
 /**
  * <p>
@@ -33,4 +36,25 @@ public interface OrderInfoService extends IService<OrderInfo> {
      * @return
      */
     OrderInfo getOrderInfoById(Long orderId);
+
+    /**
+     * 根据orderNo查询订单信息
+     * @param orderNo
+     * @return
+     */
+    OrderInfo getOrderInfoByOrderNo(String orderNo);
+
+    /**
+     * 订单支付成功，修改订单状态，扣减库存
+     * @param orderNo
+     */
+    void orderPay(String orderNo);
+
+    /**
+     * 获取用户订单分页列表
+     * @param pageParam
+     * @param orderUserQueryVo
+     * @return
+     */
+    IPage<OrderInfo> findUserOrderPage(Page<OrderInfo> pageParam, OrderUserQueryVo orderUserQueryVo);
 }

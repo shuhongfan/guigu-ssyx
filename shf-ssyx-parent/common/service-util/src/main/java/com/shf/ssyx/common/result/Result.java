@@ -61,4 +61,9 @@ public class Result<T> {
     public static<T> Result<T> fail(T data) {
         return build(data,ResultCodeEnum.FAIL);
     }
+
+    public static<T> Result<T> fail() {
+        Result<T> result = build(null, ResultCodeEnum.FAIL);
+        return result;
+    }
 }

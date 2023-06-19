@@ -5,45 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6cc618-bc6c-4e3d-9268-d2d6722b0f5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/config/RedissonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-cart-client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-cart-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-cart-client/src/main/java/com/shf/ssyx/client/CartFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/receiver/CartReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/ServiceOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/controller/OrderInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/controller/OrderItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/OrderInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/xml/OrderInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/xml/OrderItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/OrderInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/OrderItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/impl/OrderItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-order-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-order-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-order-client/src/main/java/com/shf/ssyx/order/client/OrderFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/receiver/OrderReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/ServicePaymentApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/controller/WeixinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/mapper/PaymentInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/service/PaymentInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/service/WeixinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/service/impl/PaymentInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/service/impl/WeixinServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/utils/ConstantPropertiesUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/java/com/shf/ssyx/payment/utils/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-payment/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/receiver/StockReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/code/CodeGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/code/CodeGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/result/ResultCodeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-activity-client/src/main/java/com/shf/ssyx/activity/client/ActivityFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-activity-client/src/main/java/com/shf/ssyx/activity/client/ActivityFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-product-client/src/main/java/com/shf/ssyx/client/product/ProductFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-product-client/src/main/java/com/shf/ssyx/client/product/ProductFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/api/ActivityInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/api/ActivityInfoApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/controller/ActivityInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/controller/ActivityInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/CouponInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/CouponInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/impl/CouponInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/impl/CouponInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/controller/CartApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/controller/CartApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/service/CartInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/service/CartInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/service/impl/CartInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/service/impl/CartInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/api/ProductInnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/api/ProductInnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/controller/OrderInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/controller/OrderInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/OrderInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/OrderInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/impl/OrderInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/SkuInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/SkuInfoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/xml/SkuInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/xml/SkuInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/service/SkuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/service/SkuInfoService.java" afterDir="false" />
@@ -352,7 +340,7 @@
       <workItem from="1682470985191" duration="11046000" />
       <workItem from="1682568099674" duration="4384000" />
       <workItem from="1682644261993" duration="3020000" />
-      <workItem from="1687162321902" duration="777000" />
+      <workItem from="1687162321902" duration="2066000" />
     </task>
     <servers />
   </component>

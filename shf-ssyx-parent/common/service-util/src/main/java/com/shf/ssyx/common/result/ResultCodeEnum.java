@@ -35,6 +35,9 @@ public enum ResultCodeEnum {
     SKU_LIMIT_ERROR(230, "购买个数不能大于限购个数"),
     REGION_OPEN(240, "该区域已开通"),
     REGION_NO_OPEN(240, "该区域未开通"),
+    PAYMENT_WAITING(242, "订单支付中"),
+    PAYMENT_SUCCESS(241, "订单支付成功"),
+    PAYMENT_FAIL(243, "订单支付失败"),
     ;
 
     private Integer code;
