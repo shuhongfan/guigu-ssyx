@@ -1,4 +1,4 @@
-package com.shf.ssyx.service;
+package com.shf.ssyx.cart.service;
 
 import com.shf.ssyx.model.order.CartInfo;
 
@@ -62,4 +62,17 @@ public interface CartInfoService {
      * @param isChecked
      */
     void batchCheckCart(List<Long> skuIdList, Long userId, Integer isChecked);
+
+    /**
+     * 根据用户Id查询购物车列表
+     * @param userId
+     * @return
+     */
+    List<CartInfo> getCartCheckedList(Long userId);
+
+    /**
+     * 根据userId删除用户选中购物车记录
+     * @param userId
+     */
+    void deleteCartCheck(Long userId);
 }

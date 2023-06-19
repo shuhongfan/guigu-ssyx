@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.shf.ssyx.product.mapper.SkuInfoMapper">
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id,category_id,sku_type,sku_name,img_url,per_limit,publish_status,check_status,is_new_person,sort,sku_code,price,market_price,stock,lock_stock,low_stock,sale,ware_id,create_time,update_time,is_deleted
+    </sql>
 
+<!--    解锁库存-->
+    <update id="unlockStock">
+        update sku_info
+        set lock_stock=lock_stock - #{skuNum}
+        where id = #{skuId};
+    </update>
+
+<!--    锁定库存-->
+    <update id="lockStock">
+        update sku_info
+        set lock_stock=lock_stock + #{skuNum}
+        where id = #{skuId};
+    </update>
+
+    <!--    验证库存-->
+    <select id="checkStock" resultType="com.shf.ssyx.model.product.SkuInfo">
+        select
+        <include refid="columns"/>
+        from sku_info
+        where id=#{skuId} and stock-lock_stock>#{skuNum} for update;
+    </select>
 </mapper>

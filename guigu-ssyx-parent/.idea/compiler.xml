@@ -35,13 +35,13 @@
       <module name="common-util" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="rabbit_util" options="-parameters" />
-      <module name="service" options="-parameters" />
+      <module name="service" options="" />
       <module name="service-acl" options="-parameters" />
       <module name="service-activity" options="-parameters" />
       <module name="service-activity-client" options="-parameters" />
       <module name="service-cart" options="-parameters" />
       <module name="service-cart-client" options="-parameters" />
-      <module name="service-client" options="-parameters" />
+      <module name="service-client" options="" />
       <module name="service-gateway" options="-parameters" />
       <module name="service-home" options="-parameters" />
       <module name="service-order" options="-parameters" />

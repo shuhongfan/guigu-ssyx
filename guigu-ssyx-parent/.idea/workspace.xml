@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f6cc618-bc6c-4e3d-9268-d2d6722b0f5b" name="Changes" comment="" />
+    <list default="true" id="2f6cc618-bc6c-4e3d-9268-d2d6722b0f5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/config/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-cart-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-cart-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-cart-client/src/main/java/com/shf/ssyx/client/CartFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/receiver/CartReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/ServiceOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/controller/OrderInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/controller/OrderItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/OrderInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/OrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/xml/OrderInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/mapper/xml/OrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/OrderInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/OrderItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/java/com/shf/ssyx/order/service/impl/OrderItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-order/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/code/CodeGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/common/service-util/src/main/java/com/shf/ssyx/common/code/CodeGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-activity-client/src/main/java/com/shf/ssyx/activity/client/ActivityFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-activity-client/src/main/java/com/shf/ssyx/activity/client/ActivityFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-product-client/src/main/java/com/shf/ssyx/client/product/ProductFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service-client/service-product-client/src/main/java/com/shf/ssyx/client/product/ProductFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/api/ActivityInfoApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/api/ActivityInfoApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/controller/ActivityInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/controller/ActivityInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/CouponInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/CouponInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/impl/CouponInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-activity/src/main/java/com/shf/ssyx/activity/service/impl/CouponInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/controller/CartApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/controller/CartApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/service/CartInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/service/CartInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/service/impl/CartInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/java/com/shf/ssyx/cart/service/impl/CartInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-cart/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/api/ProductInnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/api/ProductInnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/SkuInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/SkuInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/xml/SkuInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/mapper/xml/SkuInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/service/SkuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/service/SkuInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/service/impl/SkuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shf-ssyx-parent/service/service-product/src/main/java/com/shf/ssyx/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +63,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.4.1/mybatis-plus-extension-3.4.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class" root0="SKIP_INSPECTION" />
   </component>
@@ -30,23 +77,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/ssyx-project/code/guigu-ssyx-parent/service/service-payment/src/main/resources&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;service.view.auto.scroll.from.source&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;51397a588a61ae1cef5a54e75d78ddb4&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/ssyx-project/code/guigu-ssyx-parent/service/service-payment/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "service.view.auto.scroll.from.source": "true",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "51397a588a61ae1cef5a54e75d78ddb4",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -229,8 +281,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CodeGet" />
-      <item itemvalue="Application.Demo1" />
       <item itemvalue="Spring Boot.ServiceAclApplication" />
       <item itemvalue="Spring Boot.ServiceSysApplication" />
       <item itemvalue="Spring Boot.ServicePaymentApplication" />
@@ -242,6 +292,8 @@
       <item itemvalue="Spring Boot.ServiceProductApplication" />
       <item itemvalue="Spring Boot.ServiceSearchApplication" />
       <item itemvalue="Spring Boot.ServiceUserApplication" />
+      <item itemvalue="应用程序.CodeGet" />
+      <item itemvalue="应用程序.Demo1" />
     </list>
     <recent_temporary>
       <list>
@@ -254,8 +306,6 @@
         <item itemvalue="Spring Boot.ServiceCartApplication" />
         <item itemvalue="Spring Boot.ServiceOrderApplication" />
         <item itemvalue="Spring Boot.ServicePaymentApplication" />
-        <item itemvalue="Application.CodeGet" />
-        <item itemvalue="Application.Demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -302,6 +352,7 @@
       <workItem from="1682470985191" duration="11046000" />
       <workItem from="1682568099674" duration="4384000" />
       <workItem from="1682644261993" duration="3020000" />
+      <workItem from="1687162321902" duration="777000" />
     </task>
     <servers />
   </component>

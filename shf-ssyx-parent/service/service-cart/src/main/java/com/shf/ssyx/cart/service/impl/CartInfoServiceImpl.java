@@ -1,5 +1,6 @@
-package com.shf.ssyx.service.impl;
+package com.shf.ssyx.cart.service.impl;
 
+import com.shf.ssyx.cart.service.CartInfoService;
 import com.shf.ssyx.client.product.ProductFeignClient;
 import com.shf.ssyx.common.constant.RedisConst;
 import com.shf.ssyx.common.exception.SsyxException;
@@ -8,7 +9,6 @@ import com.shf.ssyx.enums.SkuType;
 import com.shf.ssyx.model.base.BaseEntity;
 import com.shf.ssyx.model.order.CartInfo;
 import com.shf.ssyx.model.product.SkuInfo;
-import com.shf.ssyx.service.CartInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundHashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -21,6 +21,7 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Service
 public class CartInfoServiceImpl implements CartInfoService {
@@ -240,6 +241,47 @@ public class CartInfoServiceImpl implements CartInfoService {
             hashOperations.put(cartInfo.getSkuId().toString(), cartInfo);
         });
         setCartKeyExpire(cartKey);
+    }
+
+    /**
+     * 根据用户Id查询购物车列表
+     * @param userId
+     * @return
+     */
+    @Override
+    public List<CartInfo> getCartCheckedList(Long userId) {
+        String cartKey = getCartKey(userId);
+        BoundHashOperations hashOperations = redisTemplate.boundHashOps(cartKey);
+        List<CartInfo> cartInfoList = hashOperations.values();
+
+        List<CartInfo> cartInfoListNew = cartInfoList.stream().filter(cartInfo -> cartInfo.getIsChecked().intValue() == 1).collect(Collectors.toList());
+
+        return cartInfoListNew;
+    }
+
+    /**
+     * 根据userId删除用户选中购物车记录
+     * @param userId
+     */
+    @Override
+    public void deleteCartCheck(Long userId) {
+//        根据userId查询选中购物车记录
+        List<CartInfo> cartInfoList = getCartCheckedList(userId);
+
+//        查询list数据处理，得到skuId集合
+        List<Long> skuIdList = cartInfoList.stream().map(CartInfo::getSkuId).collect(Collectors.toList());
+
+//        构建redis的key值
+//        hash类型 key filed-value
+        String cartKey = this.getCartKey(userId);
+
+//        根据key查询filed-value结构
+        BoundHashOperations<String,String,CartInfo> hashOperations = redisTemplate.boundHashOps(cartKey);
+
+//        根据filed（skuId）删除redis数据
+        skuIdList.forEach(skuId->{
+            hashOperations.delete(skuId.toString());
+        });
     }
 
     /**

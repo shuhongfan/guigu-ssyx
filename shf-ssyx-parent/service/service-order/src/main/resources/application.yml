@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-order
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.8.128:8848

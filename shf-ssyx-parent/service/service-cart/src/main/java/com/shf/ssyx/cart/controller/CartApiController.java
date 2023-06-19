@@ -1,17 +1,16 @@
-package com.shf.ssyx.controller;
+package com.shf.ssyx.cart.controller;
 
 import com.shf.ssyx.activity.client.ActivityFeignClient;
 import com.shf.ssyx.common.auth.AuthContextHolder;
 import com.shf.ssyx.common.result.Result;
 import com.shf.ssyx.model.order.CartInfo;
-import com.shf.ssyx.service.CartInfoService;
+import com.shf.ssyx.cart.service.CartInfoService;
 import com.shf.ssyx.vo.order.OrderConfirmVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Api(tags = "购物车接口")
@@ -101,4 +100,11 @@ public class CartApiController {
         cartInfoService.batchCheckCart(skuIdList, userId, isChecked);
         return Result.ok();
     }
+
+    @ApiOperation("根据用户Id查询购物车列表")
+    @GetMapping("inner/getCartCheckedList/{userId}")
+    public List<CartInfo> getCartCheckedList(@PathVariable("userId") Long userId) {
+        return cartInfoService.getCartCheckedList(userId);
+    }
+
 }

@@ -16,6 +16,7 @@
         <module>service-user-client</module>
         <module>service-search-client</module>
         <module>service-activity-client</module>
+        <module>service-cart-client</module>
     </modules>
 
     <properties>
