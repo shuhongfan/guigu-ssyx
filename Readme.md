@@ -10,11 +10,11 @@
 
 **美团优选，**是美团旗下的一个社区团购平台，通过自建和加盟的方式，在全国建立了大仓、网格仓、线下服务门店的物流配送体系。美团优选卖的东西也特别的全，蔬菜、水果、肉类、蛋类，然后海鲜等等。
 
-![image-20230322095158332](images\image-20230322095158332.png)
+![image-20230322095158332](images/image-20230322095158332.png)
 
 **多多买菜，**它是拼多多旗下的产品，拼多多现在已经是全中国最大的生鲜电商了，它和全国超过一千个农产品产区达成合作。
 
-![image-20230322095541897](images\image-20230322095541897.png)
+![image-20230322095541897](images/image-20230322095541897.png)
 
 
 
@@ -30,7 +30,7 @@
 
 4、用户前往自提点提货
 
-![image-20230307100451333](images\001.png)
+![image-20230307100451333](images/001.png)
 
 
 
@@ -44,13 +44,13 @@
 
 3、基础模块支撑层
 
-![img](images\002.png)
+![img](images/002.png)
 
 
 
 ### 4 技术架构
 
-![img](images\003.png)
+![img](images/003.png)
 
 
 
@@ -94,7 +94,7 @@ DockerFile：管理Docker镜像命令文本
 
 最终服务器端架构模块
 
-![image-20230427120227325](images\image-20230427120227325.png)
+![image-20230427120227325](images/image-20230427120227325.png)
 
 guigu-ssyx-parent：父工程，根目录，管理子模块：
 
@@ -132,7 +132,7 @@ guigu-ssyx-parent：父工程，根目录，管理子模块：
 
 ### 2 开发流程介绍
 
-![image-20230311092005782](images\0065.png)
+![image-20230311092005782](images/0065.png)
 
 前后端分离开发过程中，前端人员和后端人员要进行配合来共同完成一个任务。这个时候需要使用到接口。
 接口（API接口）：是一个http的请求地址，主要是定义：请求路径、请求方式、请求参数、响应数据等内容。
@@ -151,7 +151,7 @@ guigu-ssyx-parent：父工程，根目录，管理子模块：
 
 **项目结构：**
 
-![image-20230310145013976](images\014.png)
+![image-20230310145013976](images/014.png)
 
 
 
@@ -163,7 +163,7 @@ GroupId：com.atguigu
 
 ArtifactId：guigu-ssyx-parent
 
-![image-20230310144246837](images\007.png)
+![image-20230310144246837](images/007.png)
 
 
 
@@ -175,7 +175,7 @@ GroupId：com.atguigu
 
 ArtifactId：common
 
-![image-20230310144439042](images\0081.png)
+![image-20230310144439042](images/0081.png)
 
 
 
@@ -187,7 +187,7 @@ GroupId：com.atguigu
 
 ArtifactId：common-util
 
-![image-20230310144638324](images\009.png)
+![image-20230310144638324](images/009.png)
 
 
 
@@ -201,7 +201,7 @@ ArtifactId：service-util
 
 搭建方式如：common-util
 
-![image-20230310144735741](images\010.png)
+![image-20230310144735741](images/010.png)
 
 
 
@@ -213,7 +213,7 @@ ArtifactId：service-util
 
 引入资料中java实体类相关代码
 
-![image-20230310144832710](images\011.png)
+![image-20230310144832710](images/011.png)
 
 
 
@@ -223,7 +223,7 @@ service服务模块，继承guigu-ssyx-parent
 
 搭建方式如：common
 
-![image-20230310144931986](images\013.png)
+![image-20230310144931986](images/013.png)
 
 
 
@@ -686,7 +686,7 @@ common公共父模块
 
 **操作service-util模块**
 
-![image-20230310153225769](images\015.png)
+![image-20230310153225769](images/015.png)
 
 
 
@@ -1139,7 +1139,7 @@ public class Swagger2Config {
 
 **从资源文件夹中导入实体类到model模块**
 
-![image-20230311100536891](images\016.png)
+![image-20230311100536891](images/016.png)
 
 
 
@@ -1167,11 +1167,11 @@ Current：最新版
 node -v  #如果可以看到版本号，证明安装成功
 ```
 
-![image-20230327094638056](images\image-20230327094638056.png)
+![image-20230327094638056](images/image-20230327094638056.png)
 
 如果报以下错误将VS Code以管理员方式运行即可
 
-![img](images\node%20-v%E6%8A%A5%E9%94%99.bmp?lastModify=1678505294)
+![img](images/node%20-v%E6%8A%A5%E9%94%99.bmp?lastModify=1678505294)
 
 ##### 1.1.2 安装vscode
 
@@ -1183,7 +1183,7 @@ https://code.visualstudio.com/
 
 为方便后续开发，建议安装如下插件
 
-![image-20220225153946727](D:\atguigu\硅谷通用权限系统\01-课件\笔记\images\2.前端基础知识\image-20220225153946727.png)
+![image-20220225153946727](D:/atguigu/硅谷通用权限系统/01-课件/笔记/images/2.前端基础知识/image-20220225153946727.png)
 
 **（3）创建项目**
 
@@ -1247,13 +1247,13 @@ GitHub地址：https://github.com/PanJiaChen/vue-admin-template
 
 进入项目所在目录，使用命令 **npm install** 下载依赖
 
-![image-20230311115353115](images\image-20230311115353115.png)
+![image-20230311115353115](images/image-20230311115353115.png)
 
 ##### 1.2.5 启动前端项目
 
 进入项目所在目录，使用命令 **npm run dev** 启动项目
 
-![image-20230311115508663](images\image-20230311115508663.png)
+![image-20230311115508663](images/image-20230311115508663.png)
 
 
 
@@ -1405,7 +1405,7 @@ VUE_APP_BASE_API = 'http://localhost:8201'
 
 访问项目：http://localhost:9528/ 
 
-![image-20230311142116028](images\image-20230311142116028.png)
+![image-20230311142116028](images/image-20230311142116028.png)
 
 点击登录，如果可以正常进入页面，表示登录成功
 
@@ -1419,13 +1419,13 @@ VUE_APP_BASE_API = 'http://localhost:8201'
 
 在service模块下创建子模块service-acl
 
-![image-20230311100952649](images\017.png)
+![image-20230311100952649](images/017.png)
 
-![image-20230311101037254](images\018.png)
+![image-20230311101037254](images/018.png)
 
 ##### 2.1.2 创建配置文件
 
-![image-20230311101308857](images\019.png)
+![image-20230311101308857](images/019.png)
 
 **（1）application.yml**
 
@@ -1551,7 +1551,7 @@ public class BaseEntity implements Serializable {
 
 使用资料中的数据库脚本运行创建
 
-![image-20230311104732663](images\image-20230311104732663.png)
+![image-20230311104732663](images/image-20230311104732663.png)
 
 
 
@@ -1559,9 +1559,9 @@ public class BaseEntity implements Serializable {
 
 操作**shequ-acl**数据库里面**role**角色表，实现role的CURD操作
 
-![image-20230311105128719](images\image-20230311105128719.png)
+![image-20230311105128719](images/image-20230311105128719.png)
 
-![image-20230311105005471](images\image-20230311105005471.png)
+![image-20230311105005471](images/image-20230311105005471.png)
 
 ##### 2.2.1 添加RoleController
 
@@ -1727,13 +1727,13 @@ public interface RoleMapper extends BaseMapper<Role> {
 
 启动项目，访问路径  http://localhost:8201/doc.html 进行接口测试
 
-![image-20230311151326120](images\image-20230311151326120.png)
+![image-20230311151326120](images/image-20230311151326120.png)
 
 
 
 ##### 2.2.5 角色管理前端测试
 
-![image-20230311144716838](images\image-20230311144716838.png)
+![image-20230311144716838](images/image-20230311144716838.png)
 
 
 
@@ -1743,9 +1743,9 @@ public interface RoleMapper extends BaseMapper<Role> {
 
 操作**shequ-acl**数据库里面**admin**角色表，实现对admin表操作
 
-![image-20230311145513579](images\image-20230311145513579.png)
+![image-20230311145513579](images/image-20230311145513579.png)
 
-![image-20230311145637319](images\image-20230311145637319.png)
+![image-20230311145637319](images/image-20230311145637319.png)
 
 ##### 3.1.1 添加AdminController
 
@@ -1938,7 +1938,7 @@ public interface AdminMapper extends BaseMapper<Admin> {
 
 启动项目，访问路径  http://localhost:8201/doc.html 进行接口测试
 
-![image-20230311151438310](images\image-20230311151438310.png)
+![image-20230311151438310](images/image-20230311151438310.png)
 
 
 
@@ -2127,13 +2127,13 @@ public Map<String, Object> findRoleByUserId(Long adminId) {
 
 ##### 3.2.6 Swagger接口测试
 
-![image-20230311153544520](images\image-20230311153544520.png)
+![image-20230311153544520](images/image-20230311153544520.png)
 
 
 
 #### 3.3 用户管理前端测试
 
-![image-20230311155208034](images\image-20230311155208034.png)
+![image-20230311155208034](images/image-20230311155208034.png)
 
 
 
@@ -2204,7 +2204,7 @@ public Map<String, Object> findRoleByUserId(Long adminId) {
 
 操作**shequ-acl**数据库中的**permission表**
 
-![image-20230311155710277](images\image-20230311155710277.png)
+![image-20230311155710277](images/image-20230311155710277.png)
 
 重点字段说明：
 
@@ -2224,13 +2224,13 @@ public Map<String, Object> findRoleByUserId(Long adminId) {
 
 ##### 4.2.2 示例数据
 
-![image-20230311160122554](images\image-20230311160122554.png)
+![image-20230311160122554](images/image-20230311160122554.png)
 
 
 
 ##### 4.2.3 页面效果
 
-![image-20220608145017289](D:\atguigu\硅谷通用权限系统\01-课件\笔记\images\5.菜单管理\image-20220608145017289.png)
+![image-20220608145017289](D:/atguigu/硅谷通用权限系统/01-课件/笔记/images/5.菜单管理/image-20220608145017289.png)
 
 
 
@@ -2465,7 +2465,7 @@ public class PermissionAdminController {
 
 ##### 4.3.4 Swagger接口测试
 
-![image-20230311162114116](images\image-20230311162114116.png)
+![image-20230311162114116](images/image-20230311162114116.png)
 
 
 
@@ -2477,7 +2477,7 @@ public class PermissionAdminController {
 
 #### 4.5 菜单管理前端测试
 
-![image-20230311165315663](images\image-20230311165315663.png)
+![image-20230311165315663](images/image-20230311165315663.png)
 
 
 
@@ -2491,11 +2491,11 @@ public class PermissionAdminController {
 
 **（1）开通区域列表**
 
-![image-20230313104908725](images\111.png)
+![image-20230313104908725](images/111.png)
 
 **（2）添加开通区域**
 
-![image-20230403153048299](images\image-20230403153048299.png)
+![image-20230403153048299](images/image-20230403153048299.png)
 
 **（3）删除开通区域**
 
@@ -2505,15 +2505,15 @@ public class PermissionAdminController {
 
 #### 5.2 区域管理表设计
 
-![image-20230313110503961](images\118.png)
+![image-20230313110503961](images/118.png)
 
 ##### 5.2.1 地区表
 
 **存储全国的省市区直辖市数据，根据id和parent_id的对应关系，表示省市区的层级关联**
 
-![image-20230313105055687](images\112.png)
+![image-20230313105055687](images/112.png)
 
-![image-20230313105225885](images\113.png)
+![image-20230313105225885](images/113.png)
 
 
 
@@ -2521,9 +2521,9 @@ public class PermissionAdminController {
 
 **维护各个区域对应的仓库信息，包含仓库名称，仓库地址等信息**
 
-![image-20230313105402101](images\114.png)
+![image-20230313105402101](images/114.png)
 
-![image-20230313110110572](images\115.png)
+![image-20230313110110572](images/115.png)
 
 
 
@@ -2531,9 +2531,9 @@ public class PermissionAdminController {
 
 **维护开通社区团购的区域和对应的仓库的关系**
 
-![image-20230313110240827](images\116.png)
+![image-20230313110240827](images/116.png)
 
-![image-20230313110408415](images\117.png)
+![image-20230313110408415](images/117.png)
 
 
 
@@ -2543,15 +2543,15 @@ public class PermissionAdminController {
 
 创建方式和service-acl相同
 
-![image-20230313111932195](images\120.png)
+![image-20230313111932195](images/120.png)
 
-![image-20230313111857448](images\119.png)
+![image-20230313111857448](images/119.png)
 
 
 
 ##### 5.3.2 创建配置文件
 
-![image-20230313112037526](images\image-20230313112037526.png)
+![image-20230313112037526](images/image-20230313112037526.png)
 
 **application.yml**
 
@@ -2590,25 +2590,25 @@ spring:
 
 ##### 5.3.3 创建启动类
 
-![image-20230313113554533](images\125.png)
+![image-20230313113554533](images/125.png)
 
 
 
 ##### 5.3.4 创建Controller
 
-![image-20230313125927572](images\124.png)
+![image-20230313125927572](images/124.png)
 
 
 
 ##### 5.3.5 创建Service
 
-![image-20230313130009271](images\122.png)
+![image-20230313130009271](images/122.png)
 
 
 
 ##### 5.3.6 创建Mapper
 
-![image-20230313130054572](images\123.png)
+![image-20230313130054572](images/123.png)
 
 
 
@@ -2913,7 +2913,7 @@ VUE_APP_BASE_API = 'http://localhost:9001'
 
 启动nginx服务，前端测试
 
-![image-20230313144918535](images\139.png)
+![image-20230313144918535](images/139.png)
 
 
 
@@ -2925,15 +2925,15 @@ VUE_APP_BASE_API = 'http://localhost:9001'
 
 **（1）商品分类管理**
 
-![image-20230404094554758](images\image-20230404094554758.png)
+![image-20230404094554758](images/image-20230404094554758.png)
 
 **（2）平台属性分组管理**
 
-![image-20230404094910602](images\image-20230404094910602.png)
+![image-20230404094910602](images/image-20230404094910602.png)
 
 **（3）平台属性管理**
 
-![image-20230404095108698](images\image-20230404095108698.png)
+![image-20230404095108698](images/image-20230404095108698.png)
 
 **（4）商品SKU管理**
 
@@ -2946,13 +2946,13 @@ VUE_APP_BASE_API = 'http://localhost:9001'
 
 SKU通俗来讲就是一个产品最小的出库单位，**比如说**一款手机产品有红黑白三个颜色，那么一台红色手机就是一个sku。**再比如说**一件T恤除了有颜色还有尺码，那么一件s码绿色体恤就是单个sku。
 
-![image-20230404095533857](images\image-20230404095533857.png)
+![image-20230404095533857](images/image-20230404095533857.png)
 
 
 
 #### 7.2 表设计
 
-![image-20230314101016453](images\141.png)
+![image-20230314101016453](images/141.png)
 
 
 
@@ -2962,9 +2962,9 @@ SKU通俗来讲就是一个产品最小的出库单位，**比如说**一款手�
 
 创建方式和service-acl相同
 
-![image-20230313154734241](images\144.png)
+![image-20230313154734241](images/144.png)
 
-![image-20230313154700367](images\142.png)
+![image-20230313154700367](images/142.png)
 
 
 
@@ -3026,19 +3026,19 @@ public class ServiceProductApplication {
 
 ##### 7.3.4 创建Controller
 
-![image-20230313160645930](images\145.png)
+![image-20230313160645930](images/145.png)
 
 
 
 ##### 7.3.5 创建Service
 
-![image-20230313160938929](images\147.png)
+![image-20230313160938929](images/147.png)
 
 
 
 ##### 7.3.6 创建Mapper
 
-![image-20230313161033468](images\149.png)
+![image-20230313161033468](images/149.png)
 
 
 
@@ -3209,7 +3209,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
 
 ##### 7.4.3 功能测试
 
-![image-20230313164631988](images\150.png)
+![image-20230313164631988](images/150.png)
 
 
 
@@ -3488,7 +3488,7 @@ public class AttrServiceImpl extends ServiceImpl<AttrMapper, Attr>
 
 ##### 7.5.3 功能测试
 
-![image-20230314093552489](images\151.png)
+![image-20230314093552489](images/151.png)
 
 
 
@@ -3683,27 +3683,27 @@ public void saveSkuInfo(SkuInfoVo skuInfoVo) {
 
 进入管理控制台
 
-![image-20221117113207563](images\153.png)
+![image-20221117113207563](images/153.png)
 
 
 
 ###### （2）创建Bucket
 
-![image-20221117113239936](images\155.png)
+![image-20221117113239936](images/155.png)
 
 输入名称，选择区域，选择标准存储、公共读
 
-![image-20221117113454887](images\156.png)
+![image-20221117113454887](images/156.png)
 
-![image-20221117113548283](images\157.png)
+![image-20221117113548283](images/157.png)
 
 
 
 ###### （3）创建accessKeys
 
-![image-20221117114140959](images\158.png)
+![image-20221117114140959](images/158.png)
 
-![image-20221117113914164](images\159.png)
+![image-20221117113914164](images/159.png)
 
 
 
@@ -3711,7 +3711,7 @@ public void saveSkuInfo(SkuInfoVo skuInfoVo) {
 
 https://help.aliyun.com/document_detail/84781.html?spm=a2c4g.84778.0.0.6baa4b78CDRoc5
 
-![image-20230404195346988](images\image-20230404195346988.png)
+![image-20230404195346988](images/image-20230404195346988.png)
 
 
 
@@ -4141,7 +4141,7 @@ public void isNewPerson(Long skuId, Integer status) {
 
 ##### 7.6.10 功能测试
 
-![image-20230314114047067](images\162.png)
+![image-20230314114047067](images/162.png)
 
 
 
@@ -4198,7 +4198,7 @@ Spring Boot 是 Spring 的一套快速配置脚手架，可以基于Spring Boot 
 
 Spring Cloud并没有熟悉的数字版本号，而是对应一个开发代号。
 
-![image-20221016123656863](images\170.png)
+![image-20221016123656863](images/170.png)
 
 开发代号看似没有什么规律，但实际上首字母是有顺序的，比如：Dalston版本，我们可以简称 D 版本，对应的 Edgware 版本我们可以简称 E 版本。
 
@@ -4226,7 +4226,7 @@ Spring Cloud并没有熟悉的数字版本号，而是对应一个开发代号�
 
  Nacos 可以与 Spring, Spring Boot, Spring Cloud 集成，并能代替 Spring Cloud Eureka, Spring Cloud Config
 
-\- 通过 Nacos Server 和 spring-cloud-starter-alibaba-nacos-discovery 实现服务的注册与发现。
+/- 通过 Nacos Server 和 spring-cloud-starter-alibaba-nacos-discovery 实现服务的注册与发现。
 
 
 
@@ -4244,7 +4244,7 @@ Nacos主要提供以下四大功能：
 
 **（4）**Nacos结构图
 
-![img](images\171.jpg)
+![img](images/171.jpg)
 
 #### 9.2 Nacos下载和安装
 
@@ -4258,15 +4258,15 @@ Nacos主要提供以下四大功能：
 
 参考官方文档：https://nacos.io/zh-cn/docs/v2/guide/user/auth.html
 
-![image-20230405104349163](images\image-20230405104349163.png)
+![image-20230405104349163](images/image-20230405104349163.png)
 
 添加如下内容：
 
-![image-20230405104427387](images\image-20230405104427387.png)
+![image-20230405104427387](images/image-20230405104427387.png)
 
 **（3）启动nacos服务**
 
-\- Linux/Unix/Mac
+/- Linux/Unix/Mac
 
 启动命令(standalone代表着单机模式运行，非集群模式)
 
@@ -4274,7 +4274,7 @@ Nacos主要提供以下四大功能：
 
  
 
-\- Windows
+/- Windows
 
 启动方式，cmd打开，执行命令： startup.cmd -m standalone。
 
@@ -4282,9 +4282,9 @@ Nacos主要提供以下四大功能：
 
 用户名密码：nacos/nacos
 
-![image-20230405104820862](images\image-20230405104820862.png)
+![image-20230405104820862](images/image-20230405104820862.png)
 
-![image-20230405104913852](images\image-20230405104913852.png)
+![image-20230405104913852](images/image-20230405104913852.png)
 
 
 
@@ -4335,7 +4335,7 @@ Nacos主要提供以下四大功能：
 
 启动已注册的微服务，可以在Nacos服务列表中看到被注册的微服务
 
-![image-20230405114314161](images\image-20230405114314161.png)
+![image-20230405114314161](images/image-20230405114314161.png)
 
 
 
@@ -4364,7 +4364,7 @@ Elasticsearch是面向文档型数据库，一条数据在这里就是一个文�
 
 用Mysql这样的数据库存储就会容易想到建立一张User表，有各个字段等，在ElasticSearch里这就是一个文档，当然这个文档会属于一个User的类型，各种各样的类型存在于一个索引当中。这里有一份简易的将Elasticsearch和关系型数据术语对照表:
 
-![image-20211006113840156](images\image-20211006113840156.png)
+![image-20211006113840156](images/image-20211006113840156.png)
 
 
 
@@ -4422,9 +4422,9 @@ https://www.elastic.co/cn/downloads/past-releases#elasticsearch
 
 **选择7.8版本即可，其它elastic stack也可以在这里下载。**
 
-![image-20211005224526284](images\image-20211005224526284.png)下载对应操作系统平台的版本:
+![image-20211005224526284](images/image-20211005224526284.png)下载对应操作系统平台的版本:
 
-![image-20211005224758855](images\image-20211005224758855.png)
+![image-20211005224758855](images/image-20211005224758855.png)
 
 
 
@@ -4432,7 +4432,7 @@ https://www.elastic.co/cn/downloads/past-releases#elasticsearch
 
 解压elasticsearch-7.8.0-windows-x86_64.zip，目录结构:
 
-![image-20211005225915939](images\image-20211005225915939.png)
+![image-20211005225915939](images/image-20211005225915939.png)
 
 | 目录    | 说明           |
 | ------- | -------------- |
@@ -4446,11 +4446,11 @@ https://www.elastic.co/cn/downloads/past-releases#elasticsearch
 
 解压完成后进入bin目录，双击运行elasticsearch.bat
 
-![image-20211005230342806](images\image-20211005230342806.png)
+![image-20211005230342806](images/image-20211005230342806.png)
 
 测试访问: http://localhost:9200/
 
-![image-20211005230450382](images\image-20211005230450382.png)
+![image-20211005230450382](images/image-20211005230450382.png)
 
 **注意事项一：**
 
@@ -4476,37 +4476,37 @@ elasticsearch服务是一个restful风格的http服务。我们可以采用postm
 
 下载地址: https://www.elastic.co/cn/downloads/past-releases/kibana-7-8-0
 
-![image-20211006104306627](images\image-20211006104306627.png)
+![image-20211006104306627](images/image-20211006104306627.png)
 
 **解压文件:**
 
-![image-20220626230942906](images\image-20220626230942906.png)
+![image-20220626230942906](images/image-20220626230942906.png)
 
 **进入到config目录，修改kibana.yml文件：**
 
 Kibana默认端口：5601
 
-![image-20220626231045909](images\image-20220626231045909.png)                               
+![image-20220626231045909](images/image-20220626231045909.png)                               
 
 Kibana连接elasticsearch服务器的地址：elasticsearch.url: ["[http://localhost:9200](http://localhost:9200/)"]
 
-![image-20220626231107630](images\image-20220626231107630.png)
+![image-20220626231107630](images/image-20220626231107630.png)
 
 修改kibana配置支持中文：i18n.locale: "zh-CN"
 
-![image-20220626231125012](images\image-20220626231125012.png)
+![image-20220626231125012](images/image-20220626231125012.png)
 
 **运行访问**
 
-执行kibana-7.8.0-windows-x86_64\bin\kibana.bat
+执行kibana-7.8.0-windows-x86_64/bin/kibana.bat
 
-![image-20220626231149372](images\image-20220626231149372.png)
+![image-20220626231149372](images/image-20220626231149372.png)
 
 开始访问：[http://127.0.0.1:5601](http://127.0.0.1:5601/)
 
-![image-20211006105112523](images\image-20211006105112523.png)
+![image-20211006105112523](images/image-20211006105112523.png)
 
-![image-20211006105138154](images\image-20211006105138154.png)
+![image-20211006105138154](images/image-20211006105138154.png)
 
 
 
@@ -4538,13 +4538,13 @@ GitHub仓库地址：https://github.com/medcl/elasticsearch-analysis-ik
 
 下载地址: https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.8.0/elasticsearch-analysis-ik-7.8.0.zip
 
-![image-20220626230550534](images\image-20220626230550534.png)
+![image-20220626230550534](images/image-20220626230550534.png)
 
 **2)   解压安装IK插件**
 
-直接**解压到plugins\ik\目录**下，注意目录结构，解压后的zip不要放在plugins目录下
+直接**解压到plugins/ik/目录**下，注意目录结构，解压后的zip不要放在plugins目录下
 
-![image-20220626230730286](images\image-20220626230730286.png)
+![image-20220626230730286](images/image-20220626230730286.png)
 
 
 
@@ -4568,7 +4568,7 @@ POST _analyze
 }
 ```
 
-![image-20211006113334106](images\image-20211006113334106.png)
+![image-20211006113334106](images/image-20211006113334106.png)
 
 
 
@@ -4578,7 +4578,7 @@ POST _analyze
 
 在service模块下创建子模块service-search
 
-![image-20230317092842061](images\image-20230317092842061.png)
+![image-20230317092842061](images/image-20230317092842061.png)
 
 
 
@@ -4723,7 +4723,7 @@ public SkuInfo getSkuInfo(@PathVariable("skuId") Long skuId) {
 
 service-client模块下创建子模块 service-product-client定义接口
 
-![image-20230406155148925](images\image-20230406155148925.png)
+![image-20230406155148925](images/image-20230406155148925.png)
 
 **service-client模块引入依赖：**
 
@@ -4984,11 +4984,11 @@ RabbitMQ就是这样一款消息队列。RabbitMQ是一个开源的消息代理�
 
 异步处理。把消息放入消息中间件中，等到需要的时候再去处理。
 
-![image-20230406195338717](images\image-20230406195338717.png)
+![image-20230406195338717](images/image-20230406195338717.png)
 
 流量削峰。例如秒杀活动，在短时间内访问量急剧增加，使用消息队列，当消息队列满了就拒绝响应，跳转到错误页面，这样就可以使得系统不会因为超负载而崩溃
 
-![image-20230406195430949](images\image-20230406195430949.png)
+![image-20230406195430949](images/image-20230406195430949.png)
 
 
 
@@ -5007,15 +5007,15 @@ docker run -d --restart=always -p 5672:5672 -p 15672:15672 --name rabbitmq rabbi
 
 **管理后台**：http://IP:15672
 
-![img](images\23638c07-0ddb-454e-b3a0-b059e6e7eadb.png)
+![img](images/23638c07-0ddb-454e-b3a0-b059e6e7eadb.png)
 
-![img](images\9ebd97d9-a546-4310-9164-7df8f53b440a.png)
+![img](images/9ebd97d9-a546-4310-9164-7df8f53b440a.png)
 
 
 
 ##### 10.5.4 在common搭建rabbit_util模块
 
-![image-20230317103500025](images\image-20230317103500025.png)
+![image-20230317103500025](images/image-20230317103500025.png)
 
 
 ##### 10.5.5 在rabbit_util引入依赖
@@ -5397,15 +5397,15 @@ public class SkuReceiver {
 
 ###### （1）列表
 
-![image-20230407111234609](images\image-20230407111234609.png)
+![image-20230407111234609](images/image-20230407111234609.png)
 
 ###### （2）添加
 
-![image-20230407111314927](images\image-20230407111314927.png)
+![image-20230407111314927](images/image-20230407111314927.png)
 
 ###### （3）规则
 
-![image-20230407111552754](images\image-20230407111552754.png)
+![image-20230407111552754](images/image-20230407111552754.png)
 
 
 
@@ -5413,21 +5413,21 @@ public class SkuReceiver {
 
 ###### （1）列表
 
-![image-20230407111709545](images\image-20230407111709545.png)
+![image-20230407111709545](images/image-20230407111709545.png)
 
 ###### （2）添加
 
-![image-20230407111738768](images\image-20230407111738768.png)
+![image-20230407111738768](images/image-20230407111738768.png)
 
 ###### （3）规则
 
-![image-20230407111828977](images\image-20230407111828977.png)
+![image-20230407111828977](images/image-20230407111828977.png)
 
 
 
 #### 11.2 表设计
 
-![image-20230314141208433](images\166.png)
+![image-20230314141208433](images/166.png)
 
 #### 11.3 搭建环境
 
@@ -5435,9 +5435,9 @@ public class SkuReceiver {
 
 创建方式和service-acl相同
 
-![image-20230314141533542](images\168.png)
+![image-20230314141533542](images/168.png)
 
-![image-20230314141451442](images\167.png)
+![image-20230314141451442](images/167.png)
 
 
 
@@ -5503,13 +5503,13 @@ public class ServiceActivityApplication {
 
 ##### 11.3.4 创建Controller
 
-![image-20230407152827247](images\image-20230407152827247.png)
+![image-20230407152827247](images/image-20230407152827247.png)
 
 
 
 ##### 11.3.5 创建Service和Mapper
 
-![image-20230407152907471](images\image-20230407152907471.png)
+![image-20230407152907471](images/image-20230407152907471.png)
 
 
 
@@ -5583,7 +5583,7 @@ public List<SkuInfo> findSkuInfoByKeyword(String keyword) {
 
 ##### 10.4.2 service-product-client定义接口
 
-![image-20230407153140988](images\image-20230407153140988.png)
+![image-20230407153140988](images/image-20230407153140988.png)
 
 **在service-product-client模块创建接口，定义远程调用的方法**
 
@@ -5943,7 +5943,7 @@ public interface ActivityInfoMapper extends BaseMapper<ActivityInfo> {
 
 ##### 11.4.7 添加ActivityInfoMapper.xml文件
 
-![image-20230314162347720](images\1791.png)
+![image-20230314162347720](images/1791.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5988,11 +5988,11 @@ rule.id,rule.activity_id,rule.condition_amount,rule.condition_num,rule.benefit_a
 
 ##### 11.4.8 功能测试
 
-![image-20230314164959721](images\182.png)
+![image-20230314164959721](images/182.png)
 
 
 
-![image-20230314165049769](images\183.png)
+![image-20230314165049769](images/183.png)
 
 
 
@@ -6308,11 +6308,11 @@ List<Category> findCategoryList(@RequestBody List<Long> categoryIdList);
 
 ##### 11.5.6 功能测试
 
-![image-20230315094445502](images\190.png)
+![image-20230315094445502](images/190.png)
 
 
 
-![image-20230315094557037](images\191.png)
+![image-20230315094557037](images/191.png)
 
 
 
@@ -6958,7 +6958,7 @@ public class SeckillTimeServiceImpl extends ServiceImpl<SeckillTimeMapper, Secki
 
 **Spring cloud gateway**是spring官方基于Spring 5.0、Spring Boot2.0和Project Reactor等技术开发的网关，Spring Cloud Gateway旨在为微服务架构提供简单、有效和统一的API路由管理方式，Spring Cloud Gateway作为Spring Cloud生态系统中的网关，目标是替代Netflix Zuul，其不仅提供统一的路由方式，并且还基于Filter链的方式提供了网关基本的功能，例如：安全、监控/埋点、限流等。
 
-![img](images\130.jpg)
+![img](images/130.jpg)
 
 
 
@@ -6972,7 +6972,7 @@ public class SeckillTimeServiceImpl extends ServiceImpl<SeckillTimeMapper, Secki
 
 **（3）过滤器**。一个标准的Spring webFilter。Spring cloud gateway中的filter分为两种类型的Filter，分别是Gateway Filter和Global Filter。过滤器Filter将会对请求和响应进行修改处理
 
-![img](images\131.jpg)
+![img](images/131.jpg)
 
 如图所示，Spring cloud Gateway发出请求。然后再由Gateway Handler Mapping中找到与请求相匹配的路由，将其发送到Gateway web handler。Handler再通过指定的过滤器链将请求发送到实际的服务执行业务逻辑，然后返回。
 
@@ -6982,7 +6982,7 @@ public class SeckillTimeServiceImpl extends ServiceImpl<SeckillTimeMapper, Secki
 
 ##### 12.3.1 创建service-gateway模块
 
-![image-20230313135015138](images\134.png)
+![image-20230313135015138](images/134.png)
 
 
 
@@ -7113,7 +7113,7 @@ public class ServiceGatewayApplication {
 
 **（1）创建配置类**
 
-![image-20230313140309117](images\136.png)
+![image-20230313140309117](images/136.png)
 
 ```java
 package com.atguigu.ssyx.config;
@@ -7169,11 +7169,11 @@ VUE_APP_BASE_API = 'http://localhost:8200'
 
 申请地址：https://mp.weixin.qq.com/wxamp/sandbox?doc=1
 
-![image-20230315141705394](images\image-20230315141705394.png)
+![image-20230315141705394](images/image-20230315141705394.png)
 
 使用微信扫描二维码进行申请，申请成功之后，进入界面，获取小程序ID和秘钥
 
-![image-20230315141633054](images\image-20230315141633054.png)
+![image-20230315141633054](images/image-20230315141633054.png)
 
 
 
@@ -7183,7 +7183,7 @@ VUE_APP_BASE_API = 'http://localhost:8200'
 
 地址：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
-![image-20230315142335760](images\image-20230315142335760.png)
+![image-20230315142335760](images/image-20230315142335760.png)
 
 
 
@@ -7193,7 +7193,7 @@ VUE_APP_BASE_API = 'http://localhost:8200'
 
 下载地址：https://www.dcloud.io/hbuilderx.html
 
-![image-20230315140006466](images\image-20230315140006466.png)
+![image-20230315140006466](images/image-20230315140006466.png)
 
 
 
@@ -7201,7 +7201,7 @@ VUE_APP_BASE_API = 'http://localhost:8200'
 
 **资料中找到小程序代码目录，启动HBuilder，点击文件 -> 打开目录**
 
-![image-20230315140240188](images\image-20230315140240188.png)
+![image-20230315140240188](images/image-20230315140240188.png)
 
 
 
@@ -7209,7 +7209,7 @@ VUE_APP_BASE_API = 'http://localhost:8200'
 
 也可以不提前安装插件，在运行过程中，根据提示安装需要的插件
 
-![image-20230315140909351](images\image-20230315140909351.png)
+![image-20230315140909351](images/image-20230315140909351.png)
 
 
 
@@ -7219,7 +7219,7 @@ VUE_APP_BASE_API = 'http://localhost:8200'
 
 Dcloud_AppID 与 Vue 版本的设置
 
-![image-20230315142943203](images\image-20230315142943203.png)
+![image-20230315142943203](images/image-20230315142943203.png)
 
 
 
@@ -7229,7 +7229,7 @@ Dcloud_AppID 与 Vue 版本的设置
 - 检查安全域名和 TLS 版本与微信开发者工具的配置是相反的，所以在此是不需要选择
 - 地址位置的应用需要进行权限的配置，可以填写获取位置的需求描述
 
-![image-20230315143152967](images\image-20230315143152967.png)
+![image-20230315143152967](images/image-20230315143152967.png)
 
 
 
@@ -7237,9 +7237,9 @@ Dcloud_AppID 与 Vue 版本的设置
 
 想要将当前项目运行到小程序，需要进行将 Hbuilder与微信开发者工具进行关联，所以需要在 Hbuilder 开发工具，“运行”->“运行到小程序模拟器”->“运行时设置”->“微信开发者工具路径”中进行路径设置
 
-![image-20230315143558790](images\image-20230315143558790.png)
+![image-20230315143558790](images/image-20230315143558790.png)
 
-![image-20230315143716630](images\image-20230315143716630.png)
+![image-20230315143716630](images/image-20230315143716630.png)
 
 
 
@@ -7247,7 +7247,7 @@ Dcloud_AppID 与 Vue 版本的设置
 
 由于微信小程序开发工具不会随便与第三方开发工具进行衔接，需要打开微信开发者工具的安全设置项
 
-![image-20230315144159462](images\image-20230315144159462.png)
+![image-20230315144159462](images/image-20230315144159462.png)
 
 
 
@@ -7257,7 +7257,7 @@ Dcloud_AppID 与 Vue 版本的设置
 
 网址：https://ngrok.cc/login/register
 
-![image-20220302155428572](images\image-20220302155428572.png)
+![image-20220302155428572](images/image-20220302155428572.png)
 
 
 
@@ -7265,7 +7265,7 @@ Dcloud_AppID 与 Vue 版本的设置
 
 **（1）注册成功之后，登录系统，进行实名认证，认证费2元，认证通过后才能开通隧道**
 
-![image-20220302155551084](images\image-20220302155551084.png)
+![image-20220302155551084](images/image-20220302155551084.png)
 
 
 
@@ -7275,17 +7275,17 @@ Dcloud_AppID 与 Vue 版本的设置
 
 **最后一个是免费服务器，建议选择付费服务器，10元/月，因为免费服务器使用人数很多，经常掉线**
 
-![image-20220302155753120](images\image-20220302155753120.png)
+![image-20220302155753120](images/image-20220302155753120.png)
 
 **（2）点击立即购买 -> 输入相关信息**
 
-![image-20220302160247603](images\image-20220302160247603.png)
+![image-20220302160247603](images/image-20220302160247603.png)
 
 **（3）开通成功后，查看开通的隧道**
 
 **这里开通了两个隧道，一个用于后端接口调用，一个用于公众号前端调用**
 
-![image-20220307092222322](images\image-20220307092222322.png)
+![image-20220307092222322](images/image-20220307092222322.png)
 
 
 
@@ -7293,23 +7293,23 @@ Dcloud_AppID 与 Vue 版本的设置
 
 **（1）下载客户端工具**
 
-![image-20220302160737471](images\image-20220302160737471.png)
+![image-20220302160737471](images/image-20220302160737471.png)
 
 **（2）选择windows版本**
 
-![image-20220302160834683](images\image-20220302160834683.png)
+![image-20220302160834683](images/image-20220302160834683.png)
 
 **（3）解压，找到bat文件，双击启动**
 
-![image-20220302160924245](images\image-20220302160924245.png)
+![image-20220302160924245](images/image-20220302160924245.png)
 
 **（4）输入隧道id，多个使用逗号隔开，最后回车就可以启动**
 
-![image-20220307092329552](images\image-20220307092329552.png)
+![image-20220307092329552](images/image-20220307092329552.png)
 
 
 
-![image-20230315150000491](images\image-20230315150000491.png)
+![image-20230315150000491](images/image-20230315150000491.png)
 
 
 
@@ -7317,21 +7317,21 @@ Dcloud_AppID 与 Vue 版本的设置
 
 修改项目 common -> http.interceptor.js 文件中为内网穿透域名地址
 
-![image-20230315145500928](images\image-20230315145500928.png)
+![image-20230315145500928](images/image-20230315145500928.png)
 
 
 
 #### 1.6 项目运行结果的查看
 
-![image-20230315144418827](images\image-20230315144418827.png)
+![image-20230315144418827](images/image-20230315144418827.png)
 
 
 
-![image-20230315144532635](images\image-20230315144532635.png)
+![image-20230315144532635](images/image-20230315144532635.png)
 
 
 
-![image-20230315144623167](images\image-20230315144623167.png)
+![image-20230315144623167](images/image-20230315144623167.png)
 
 
 
@@ -7341,7 +7341,7 @@ Dcloud_AppID 与 Vue 版本的设置
 
 ##### 2.1.1 页面效果
 
-![image-20230310102622288](images\005.png)
+![image-20230310102622288](images/005.png)
 
 
 
@@ -7351,7 +7351,7 @@ Dcloud_AppID 与 Vue 版本的设置
 
 https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html
 
-![img](images\195.jpg)
+![img](images/195.jpg)
 
 1、调用 wx.login() 获取 临时登录凭证code ，并回传到开发者服务器。
 
@@ -7377,9 +7377,9 @@ https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.ht
 
 在service下创建子模块service-user模块
 
-![image-20230315102746385](images\194.png)
+![image-20230315102746385](images/194.png)
 
-![image-20230315102647452](images\193.png)
+![image-20230315102647452](images/193.png)
 
 
 
@@ -7450,7 +7450,7 @@ public class ServiceUserApplication {
 
 ##### 2.2.4 开发微信用户授权登录接口
 
-![image-20230409163518619](images\image-20230409163518619.png)
+![image-20230409163518619](images/image-20230409163518619.png)
 
 ###### 2.2.4.1 整合JWT
 
@@ -7468,7 +7468,7 @@ JWT最重要的作用就是对 token信息的**防伪**作用。
 
 一个JWT由**三个部分组成：公共部分、私有部分、签名部分**。最后由这三者组合进行base64编码得到JWT。
 
-![img](images\0.00022527543306422325.png)
+![img](images/0.00022527543306422325.png)
 
 1、 公共部分
 
@@ -8335,7 +8335,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
 ##### 3.1.1 页面效果
 
-![image-20230317150341014](images\image-20230317150341014.png)
+![image-20230317150341014](images/image-20230317150341014.png)
 
 
 
@@ -8573,7 +8573,7 @@ public Result updateUser(@RequestBody User user) {
 
 ##### 3.3.1 创建service-home模块
 
-![image-20230317111454183](images\image-20230317111454183.png)
+![image-20230317111454183](images/image-20230317111454183.png)
 
 
 
@@ -8773,7 +8773,7 @@ Spring Data是一个用于简化数据库、非关系型数据库、索引库访
 
 按照Spring Data的规范的规定，根据方法名称自动实现查询功能。查询方法以find | read | get开头（比如 find、findBy、read、readBy、get、getBy），涉及查询条件时，条件的属性用条件关键字连接，要注意的是：条件属性以首字母大写。直接在接口中定义查询方法，如果是符合规范的，可以不用写实现，即不用写SQL，目前支持的关键字写法如下：
 
-![img](images\17d5660ad81a2ea983c96e2dadeecd74.png)
+![img](images/17d5660ad81a2ea983c96e2dadeecd74.png)
 
 
 
@@ -8958,7 +8958,7 @@ public class HomeServiceImpl implements HomeService {
 
 ##### 4.1.1 页面效果
 
-![image-20230317153507649](images\image-20230317153507649.png)
+![image-20230317153507649](images/image-20230317153507649.png)
 
 
 
@@ -9223,7 +9223,7 @@ rule.id,rule.activity_id,rule.condition_amount,rule.condition_num,rule.benefit_a
 
 **service-client模块下创建service-activity-client模块**
 
-![image-20230411152556294](images\image-20230411152556294.png)
+![image-20230411152556294](images/image-20230411152556294.png)
 
 **创建ActivityFeignClient定义接口**
 
@@ -9258,7 +9258,7 @@ public interface ActivityFeignClient {
 
 ##### 5.1.1 页面效果
 
-![image-20230317160007849](images\image-20230317160007849.png)
+![image-20230317160007849](images/image-20230317160007849.png)
 
 
 
@@ -9314,13 +9314,13 @@ public interface ActivityFeignClient {
 
 **（2）串行-同步串行：**代表多任务按先后顺序执行，并且都是**同一个线程**来执行。
 
-![image-20230411205201407](images\image-20230411205201407.png)
+![image-20230411205201407](images/image-20230411205201407.png)
 
 
 
 **（3）串行-异步串行：**代表多任务按先后顺序执行，并由**不同的线程**来执行。
 
-![image-20230411205339125](images\image-20230411205339125.png)
+![image-20230411205339125](images/image-20230411205339125.png)
 
 
 
@@ -9328,13 +9328,13 @@ public interface ActivityFeignClient {
 
 ​      例子：泡方便面，电水壶烧水，一边撕调料倒入桶中
 
-![image-20230411205558439](images\image-20230411205558439.png)
+![image-20230411205558439](images/image-20230411205558439.png)
 
 
 
 **（5）任务合并：**一个任务的执行依赖于前面多个任务执行的返回值，并且这些任务可以由同一个线程执行，也可以由不同的线程执行；
 
-![image-20230411205751107](images\image-20230411205751107.png)
+![image-20230411205751107](images/image-20230411205751107.png)
 
 
 
@@ -9356,11 +9356,11 @@ public interface ActivityFeignClient {
 
 **（2）创建线程池**
 
-![image-20230411210307220](images\image-20230411210307220.png)
+![image-20230411210307220](images/image-20230411210307220.png)
 
 **（3）线程池的7个重要参数**
 
-![image-20230411210444051](images\image-20230411210444051.png)
+![image-20230411210444051](images/image-20230411210444051.png)
 
 1. corePoolSize：线程池中的常驻核心线程数
 2. maximumPoolSize：线程池中能够容纳同时 执行的最大线程数，此值必须大于等于1
@@ -9380,7 +9380,7 @@ Future是Java 5添加的类，用来描述一个异步计算的结果。你可�
 
 CompletableFuture和FutureTask同属于Future接口的实现类，都可以获取线程的执行结果。
 
-![image-20230411192549891](images\image-20230411192549891.png)
+![image-20230411192549891](images/image-20230411192549891.png)
 
 
 
@@ -9388,11 +9388,11 @@ CompletableFuture和FutureTask同属于Future接口的实现类，都可以获�
 
 CompletableFuture 提供了四个静态方法来创建一个异步操作。
 
-![img](images\wps1.jpg) 
+![img](images/wps1.jpg) 
 
 没有指定Executor的方法会使用**ForkJoinPool.commonPool()** 作为它的线程池执行异步代码。如果指定线程池，则使用指定的线程池运行。以下所有的方法都类同。
 
-**\- runAsync方法不支持返回值。**
+**/- runAsync方法不支持返回值。**
 
 示例代码：
 
@@ -9418,7 +9418,7 @@ public class Demo1 {
 
 
 
-**\- supplyAsync可以支持返回值。**
+**/- supplyAsync可以支持返回值。**
 
 示例代码：
 
@@ -9452,7 +9452,7 @@ public class Demo2 {
 
 当CompletableFuture的计算结果完成，或者抛出异常的时候，可以执行特定的Action。主要是下面的方法：
 
-![img](images\wps2.jpg) 
+![img](images/wps2.jpg) 
 
 whenComplete可以处理正常或异常的计算结果，exceptionally处理异常情况。BiConsumer<? super T,? super Throwable>可以定义处理业务
 
@@ -9493,15 +9493,15 @@ public class Demo3 {
 
 thenApply 方法：当一个线程依赖另一个线程时，获取上一个任务返回的结果，并返回当前任务的返回值。
 
-![img](images\wps3.jpg) 
+![img](images/wps3.jpg) 
 
 thenAccept方法：消费处理结果。接收任务的处理结果，并消费处理，无返回结果。
 
-![img](images\wps4.jpg) 
+![img](images/wps4.jpg) 
 
 thenRun方法：只要上面的任务执行完成，就开始执行thenRun，只是处理完任务后，执行 thenRun的后续操作
 
-![img](images\wps5.jpg) 
+![img](images/wps5.jpg) 
 
 带有Async默认是异步执行的。这里所谓的异步指的是不在当前线程内执行。
 
@@ -10030,7 +10030,7 @@ public interface SearchFeignClient {
 
 ##### 6.1.1 页面效果
 
-![image-20230318090313704](images\image-20230318090313704.png)
+![image-20230318090313704](images/image-20230318090313704.png)
 
 
 
@@ -10056,7 +10056,7 @@ public interface SearchFeignClient {
 
 （1）在service模块下创建子模块service-cart
 
-![image-20230318093652341](images\image-20230318093652341.png)
+![image-20230318093652341](images/image-20230318093652341.png)
 
 （2）创建配置文件
 
@@ -10139,7 +10139,7 @@ public class ServiceCartApplication {
 
 Redis中的hash类型是一个键值对集合，hash特别适合用于存储对象。 类似Java里面的双层Map<String，Map<String，Object>>，项目中购物车数据使用Redis的hash类型进行存储。
 
-![image-20230413221151692](images\image-20230413221151692.png)
+![image-20230413221151692](images/image-20230413221151692.png)
 
 ###### 6.2.2.2 添加CartApiController方法
 
@@ -11052,7 +11052,7 @@ public void batchCheckCart(List<Long> skuIdList, Long userId, Integer isChecked)
 
 ##### 7.1.1 页面效果
 
-![image-20230318110626457](images\image-20230318110626457.png)
+![image-20230318110626457](images/image-20230318110626457.png)
 
 
 
@@ -11080,7 +11080,7 @@ public void batchCheckCart(List<Long> skuIdList, Long userId, Integer isChecked)
 
 （1）在service模块下创建子模块service-order
 
-![image-20230318102410211](images\image-20230318102410211.png)
+![image-20230318102410211](images/image-20230318102410211.png)
 
 （2）创建配置文件
 
@@ -11335,7 +11335,7 @@ public interface CartFeignClient {
 
 分布式锁（多服务共享锁） 在分布式的部署环境下，通过锁机制来让多客户端互斥的对共享资源进行访问
 
-![image-20230420155909228](images\image-20230420155909228.png)
+![image-20230420155909228](images/image-20230420155909228.png)
 
 **上述图中存在问题：**假如某个时刻，redis里面的某个商品库存为1，此时两个请求同时到来，其中一个请求执行到上图的第3步，更新数据库的库存为0，但是第4步还没有执行。而另外一个请求执行到了第2步，发现库存还是1，就继续执行第3步。这样的结果，是导致卖出了2个商品，然而其实库存只有1个。
 
@@ -11345,7 +11345,7 @@ public interface CartFeignClient {
 
 **如果现在要增加一台机器，如下图**
 
-![image-20230420160451920](images\image-20230420160451920.png)
+![image-20230420160451920](images/image-20230420160451920.png)
 
 ```
 假设此时两个用户的请求同时到来，但是落在了不同的机器上，那么这两个请求是可以同时执行了，还是会出现库存超卖的问题。为什么呢？因为上图中的两个A系统，运行在两个不同的JVM里面，他们加的锁只对属于自己JVM里面的线程有效，对于其他JVM的线程是无效的。因此，这里的问题是Java提供的原生锁机制在多机部署场景下失效了这是因为两台机器加的锁不是同一个锁(两个锁在不同的JVM里面)。
@@ -11356,7 +11356,7 @@ public interface CartFeignClient {
 
 Redisson分布式锁解决分布式环境下并发安全问题，完全实现了juc的功能，不仅有锁，还都是分布式锁
 
-![image-20230420154523687](images\image-20230420154523687.png)
+![image-20230420154523687](images/image-20230420154523687.png)
 
 ###### （2）添加Redisson配置类
 
@@ -12065,7 +12065,7 @@ public OrderInfo getOrderInfoById(Long orderId) {
 
 ##### 8.1.1 页面效果
 
-![image-20230318111453632](images\image-20230318111453632.png)
+![image-20230318111453632](images/image-20230318111453632.png)
 
 
 
@@ -12091,7 +12091,7 @@ public OrderInfo getOrderInfoById(Long orderId) {
 
 在service模块下创建子模块service-payment
 
-![image-20230318112329472](images\image-20230318112329472.png)
+![image-20230318112329472](images/image-20230318112329472.png)
 
 ###### （2）创建配置文件
 
@@ -12178,7 +12178,7 @@ weixin:
   partner: 1481962542
   partnerkey: MXb72b9RfshXZD4FRGV5KLqmv5bx9LT9
   notifyurl: http://gmall-prod.atguigu.cn/api/payment/weixin/notify
-  cert: D:\yygh_work\yygh_parent\service\service-order\src\main\resources\apiclient_cert.p12
+  cert: D:/yygh_work/yygh_parent/service/service-order/src/main/resources/apiclient_cert.p12
 ```
 
 ###### （3）创建启动类
@@ -12727,7 +12727,7 @@ Integer minusStock(@Param("skuId")Long skuId, @Param("skuNum")Integer skuNum);
 
 ##### 9.1.1 页面效果
 
-![image-20230318113833869](images\image-20230318113833869.png)
+![image-20230318113833869](images/image-20230318113833869.png)
 
 
 
@@ -12820,9 +12820,9 @@ public IPage<OrderInfo> getOrderInfoByUserIdPage(Page<OrderInfo> pageParam,
 
 **项目打包 npm run build:prod**
 
-![image-20230320111014959](images\image-20230320111014959.png)
+![image-20230320111014959](images/image-20230320111014959.png)
 
-![image-20230320134751477](images\image-20230320134751477.png)
+![image-20230320134751477](images/image-20230320134751477.png)
 
 **部署到Nginx或者Tomcat中运行**
 
@@ -12832,13 +12832,13 @@ public IPage<OrderInfo> getOrderInfoByUserIdPage(Page<OrderInfo> pageParam,
 
 **通过HBuilder工具完成部署**
 
-![image-20230426153756454](images\image-20230426153756454.png)
+![image-20230426153756454](images/image-20230426153756454.png)
 
-![image-20230426153857909](images\image-20230426153857909.png)
+![image-20230426153857909](images/image-20230426153857909.png)
 
 **部署文档：https://hx.dcloud.net.cn/cli/publish-mp-weixin**
 
-![image-20230426154113892](images\image-20230426154113892.png)
+![image-20230426154113892](images/image-20230426154113892.png)
 
 
 
@@ -13016,7 +13016,7 @@ mkdir -p /mydata/elasticsearch/data
 
 # 授予权限chmod 777 /mydata/elasticsearch/data
 
-docker run -p 9200:9200 -p 9300:9300 --name elasticsearch --restart=always \-e "discovery.type=single-node" \-e ES_JAVA_OPTS="-Xms512m -Xmx512m" \-v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \-v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \-d elasticsearch:7.8.0
+docker run -p 9200:9200 -p 9300:9300 --name elasticsearch --restart=always /-e "discovery.type=single-node" /-e ES_JAVA_OPTS="-Xms512m -Xmx512m" /-v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins /-v /mydata/elasticsearch/data:/usr/share/elasticsearch/data /-d elasticsearch:7.8.0
 
 # 第三步：安装中文分词器
 
@@ -13046,9 +13046,9 @@ docker run -p 9200:9200 -p 9300:9300 --name elasticsearch --restart=always \-e "
 
 ##### 2.2.2 项目打包
 
-![image-20230320093501181](images\image-20230320093501181.png)
+![image-20230320093501181](images/image-20230320093501181.png)
 
-![image-20230320091737844](images\image-20230320091737844.png)
+![image-20230320091737844](images/image-20230320091737844.png)
 
 
 
@@ -13067,15 +13067,15 @@ ENTRYPOINT ["java","-jar","/service-gateway.jar", "&"]
 
 **把jar包和Dockerfile文件放到同一个目录下，**
 
-![image-20230426192228466](images\image-20230426192228466.png)
+![image-20230426192228466](images/image-20230426192228466.png)
 
 **执行命令：docker build -t service-gateway:1.0.0 .**
 
-![image-20230426192407129](images\image-20230426192407129.png)
+![image-20230426192407129](images/image-20230426192407129.png)
 
 **查看制作好的镜像**
 
-![image-20230426192452265](images\image-20230426192452265.png)
+![image-20230426192452265](images/image-20230426192452265.png)
 
 
 
@@ -13083,9 +13083,9 @@ ENTRYPOINT ["java","-jar","/service-gateway.jar", "&"]
 
 执行命令 **docker run -d -p 8200:8200 service-gateway:1.0.0 -t**
 
-![image-20230426192556706](images\image-20230426192556706.png)
+![image-20230426192556706](images/image-20230426192556706.png)
 
 **访问测试：**
 
-![image-20230426192000020](images\image-20230426192000020.png)
+![image-20230426192000020](images/image-20230426192000020.png)
 
